@@ -31,9 +31,7 @@
   text-decoration: none;
 }
 
-.toolbar_navigation-items a:hover,
-.toolbar_navigation-items a:active,
-.toolbar_navigation-items a.active {
+.toolbar_navigation-items a:hover {
   color: #fa923f;
 }
 
