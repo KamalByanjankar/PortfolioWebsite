@@ -14,8 +14,8 @@ import OnClickHandler from "../contents/OnClickHandler"
 function App() {
   return (
     <Router>
-      <CustomChatbot />
       <div className="App">
+        <CustomChatbot />
         <OnClickHandler/>
         <Route exact path="/">
           <Home />

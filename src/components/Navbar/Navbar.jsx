@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Navitem from "./Navitem";
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton"
 import "./Navbar.css"
+import NavigationItem from './NavigationItem';
 
 class Navbar extends Component {
   state = {
@@ -23,38 +23,11 @@ class Navbar extends Component {
     return (
       <header className="toolbar">
         <nav className="toolbar__navigation">
-        <div className="toolbar__toggle-button">
-              <DrawerToggleButton clickEvent = {this.props.drawerClickHandler}/>
+          <div className="toolbar__toggle-button">
+            <DrawerToggleButton clickEvent = {this.props.drawerClickHandler}/>
           </div>
           <div className="toolbar_navigation-items">
-            <ul>
-              <Navitem item="Home" tolink="/" activec={this.activeitem}></Navitem>
-              <Navitem
-                item="About"
-                tolink="/about"
-                activec={this.activeitem}
-              ></Navitem>
-              <Navitem
-                item="Education"
-                tolink="/education"
-                activec={this.activeitem}
-              ></Navitem>
-              <Navitem
-                item="Skills"
-                tolink="/skills"
-                activec={this.activeitem}
-              ></Navitem>
-              <Navitem
-                item="Projects"
-                tolink="/projects"
-                activec={this.activeitem}
-              ></Navitem>
-              <Navitem
-                item="Contact"
-                tolink="/contact"
-                activec={this.activeitem}
-              ></Navitem>
-            </ul>
+           <NavigationItem active={this.activeitem}/>
           </div>
         </nav>
       </header>

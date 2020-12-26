@@ -1,32 +1,20 @@
 import React, { Component } from "react";
 import './SideDrawer.css';
-import Navitem from "../Navbar/Navitem";
+import NavigationItem from '../Navbar/NavigationItem';
 
 class SideDrawer extends Component {
-  constructor(props) {
-    super();
-    this.state = {
+    state = {
       NavItemActive: "",
       sideBarIsOpen: false
-    };
-  }     
+    };    
 
   activeitem = () => {
-    this.setState({
-      sideBarIsOpen: !this.state.sideBarIsOpen
+    this.setState((prevState) => {
+      return{
+        sideBarIsOpen: !prevState.sideBarIsOpen
+      }
     })
   }
-  
-  activeitem = (x) => {
-    if (this.state.NavItemActive.length > 0) {
-      document
-        .getElementById(this.state.NavItemActive)
-        .classList.remove("active");
-    }
-    this.setState({ NavItemActive: x }, () => {
-      document.getElementById(this.state.NavItemActive).classList.add("active");
-    });
-  };
 
   render(){
     let drawerClasses = 'side-drawer';
@@ -35,34 +23,7 @@ class SideDrawer extends Component {
     }
     return(
       <nav className={drawerClasses} >
-        <ul>
-            <Navitem item="Home" tolink="/" activec={this.activeitem}></Navitem>
-            <Navitem
-            item="About"
-            tolink="/about"
-            activec={this.activeitem}
-          ></Navitem>
-          <Navitem
-            item="Education"
-            tolink="/education"
-            activec={this.activeitem}
-          ></Navitem>
-          <Navitem
-            item="Skills"
-            tolink="/skills"
-            activec={this.activeitem}
-          ></Navitem>
-          <Navitem
-            item="Projects"
-            tolink="/projects"
-            activec={this.activeitem}
-          ></Navitem>
-          <Navitem
-            item="Contact"
-            tolink="/contact"
-            activec={this.activeitem}
-          ></Navitem>
-        </ul>
+        <NavigationItem active={this.activeitem}/>
       </nav>
     );
   }
