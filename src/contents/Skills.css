@@ -1,0 +1,129 @@
+.skills li {
+  position: relative;
+  list-style: none;
+  margin: 40px 0;
+  right: 40px;
+}
+
+.skills li::before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 90%;
+  height: 15px;
+  background-color: #cad2d9;
+  border-radius: 10px;
+}
+
+.skills li::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 0;
+  height: 15px;
+  background-color: #404040;
+  border-radius: 10px;
+  animation: 0.5s ease-in;
+  animation-fill-mode: forwards;
+}
+
+li.java:after {
+  animation-name: java;
+}
+
+@keyframes java {
+  to {
+    width: 60%;
+  }
+}
+
+li.python:after {
+  animation-name: python;
+}
+
+@keyframes python {
+  to {
+    width: 60%;
+  }
+}
+
+li.javascript:after {
+  animation-name: javascript;
+}
+
+@keyframes javascript {
+  to {
+    width: 40%;
+  }
+}
+
+li.html:after {
+  animation-name: html;
+}
+
+@keyframes html {
+  to {
+    width: 60%;
+  }
+}
+
+li.css:after {
+  animation-name: css;
+}
+
+@keyframes css {
+  to {
+    width: 60%;
+  }
+}
+
+li.react:after {
+  animation-name: react;
+}
+
+@keyframes react {
+  to {
+    width: 40%;
+  }
+}
+
+.percent {
+  font-size: 15px;
+  right: 30px;
+  position: absolute;
+  top: 28px;
+}
+
+@media (max-width: 1366px) {
+  .percent {
+    right: 5px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .percent {
+    right: -15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills li {
+    margin: 34px 0;
+  }
+
+  .skills li::before {
+    width: 100%;
+    height: 12px;
+  }
+
+  .skills li::after {
+    height: 12px;
+  }
+
+  .percent {
+    font-size: 15px;
+    right: -36px;
+  }
+}

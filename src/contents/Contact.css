@@ -1,0 +1,80 @@
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-wrapper li {
+  width: 20%;
+  margin: 20px 30px 0 0;
+  padding: 20px;
+  position: relative;
+  top: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  background: #cad2d9;
+  cursor: pointer;
+}
+
+.contact-wrapper img {
+  width: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0 30px 0;
+}
+
+.contact-wrapper p {
+  font-size: 15px;
+  text-align: center;
+}
+
+.contact-wrapper li:hover {
+  top: -5px;
+  transition: 0.5s ease-out;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 1024px) {
+  .contact-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .contact-wrapper li {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .contact-wrapper img {
+    width: 30px;
+    padding: 20px 0;
+  }
+
+  .contact-wrapper p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .contact-wrapper li {
+    width: 46%;
+    padding: 0px;
+    flex: 0 1 41%;
+  }
+
+  .contact-wrapper img {
+    width: 30px;
+    padding: 20px 0;
+  }
+
+  .contact-wrapper p {
+    font-size: 10px;
+  }
+}
