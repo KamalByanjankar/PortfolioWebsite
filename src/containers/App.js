@@ -7,7 +7,7 @@ import Education from "../contents/Education";
 import Skills from "../contents/Skills";
 import Projects from "../contents/Projects";
 import Contact from "../contents/Contact";
-import CustomChatbot from "../components/Chatbot/CustomChatbot";
+// import CustomChatbot from "../components/Chatbot/CustomChatbot";
 import OnClickHandler from "../contents/OnClickHandler"
 
 
@@ -15,26 +15,14 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <CustomChatbot />
+        {/* <CustomChatbot /> */}
         <OnClickHandler/>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/education">
-          <Education />
-        </Route>
-        <Route path="/skills">
-          <Skills />
-        </Route>
-        <Route path="/projects">
-          <Projects />
-        </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/education" component={Education} />
+          <Route path="/skills" component={Skills} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/contact" component={Contact} />
       </div>
     </Router>
   );

@@ -5,18 +5,11 @@ import NavigationItem from './NavigationItem';
 
 class Navbar extends Component {
   state = {
-    NavItemActive: "",
+    bgColor: ''
   }
   
-  activeitem = (x) => {
-    if (this.state.NavItemActive.length > 0) {
-      document
-        .getElementById(this.state.NavItemActive)
-        .classList.remove("active");
-    }
-    this.setState({ NavItemActive: x }, () => {
-      document.getElementById(this.state.NavItemActive).classList.add("active");
-    });
+  activeitem = (e) => {
+    // console.log(e ,'clicked')
   };
 
   render() {
@@ -26,8 +19,8 @@ class Navbar extends Component {
           <div className="toolbar__toggle-button">
             <DrawerToggleButton clickEvent = {this.props.drawerClickHandler}/>
           </div>
-          <div className="toolbar_navigation-items">
-           <NavigationItem active={this.activeitem}/>
+          <div className="toolbar_navigation-items" style={{color: this.state.bgColor}}>
+           <NavigationItem active={this.activeitem} />
           </div>
         </nav>
       </header>
