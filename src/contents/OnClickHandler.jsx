@@ -29,8 +29,8 @@ class ClickHandler extends Component {
         return ( 
             <div>
                 <Navbar drawerClickHandler = {this.drawerToggleClickHandler}/>
-                <SideDrawer show={this.state.sideDrawerOpen}/>
-                {backDrop}  
+                <SideDrawer show={this.state.sideDrawerOpen} closeSidebar={this.drawerToggleClickHandler}/>  
+                {backDrop}
             </div>
             
          );

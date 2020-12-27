@@ -8,6 +8,7 @@ const Navitem = (props) => {
         exact
         activeStyle={{color:'#fa923f'}}
         to={props.tolink}
+        onClick={props.clickEvents}
       >
         {props.item}
       </NavLink>

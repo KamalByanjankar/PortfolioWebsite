@@ -3,34 +3,37 @@ import Navitem from './Navitem';
 
 const navigationItem = (props) => {
     return(
-            <ul>
-            <Navitem item="Home" tolink="/" ></Navitem>
+        <ul>
+            <Navitem 
+                clickEvents={props.clickEvent} 
+                item="Home" tolink="/" 
+            ></Navitem>
             <Navitem
+                clickEvents={props.clickEvent}
                 item="About"
                 tolink="/about"
-                // activec={props.active}
             ></Navitem>
             <Navitem
+                clickEvents={props.clickEvent}
                 item="Education"
                 tolink="/education"
-                // activec={props.active}
             ></Navitem>
             <Navitem
+                clickEvents={props.clickEvent}
                 item="Skills"
                 tolink="/skills"
-                // activec={props.active}
             ></Navitem>
             <Navitem
+                clickEvents={props.clickEvent}
                 item="Projects"
                 tolink="/projects"
-                // activec={props.active}
             ></Navitem>
             <Navitem
+                clickEvents={props.clickEvent}
                 item="Contact"
                 tolink="/contact"
-                // activec={props.active}
             ></Navitem>
-            </ul>
+        </ul>
                 
     )
 }

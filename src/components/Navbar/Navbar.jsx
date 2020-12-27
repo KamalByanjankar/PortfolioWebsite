@@ -11,7 +11,7 @@ const Navbar = (props) => {
           <DrawerToggleButton clickEvent = {props.drawerClickHandler}/>
         </div>
         <div className="toolbar_navigation-items" >
-          <NavigationItem />
+          <NavigationItem clickEvent = {props.drawerClickHandler}/>
         </div>
       </nav>
     </header>

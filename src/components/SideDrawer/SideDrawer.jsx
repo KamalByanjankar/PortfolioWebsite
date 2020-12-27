@@ -3,19 +3,6 @@ import './SideDrawer.css';
 import NavigationItem from '../Navbar/NavigationItem';
 
 class SideDrawer extends Component {
-    state = {
-      NavItemActive: "",
-      sideBarIsOpen: false
-    };    
-
-  activeitem = () => {
-    this.setState((prevState) => {
-      return{
-        sideBarIsOpen: !prevState.sideBarIsOpen
-      }
-    })
-  }
-
   render(){
     let drawerClasses = 'side-drawer';
     if(this.props.show){
@@ -23,7 +10,7 @@ class SideDrawer extends Component {
     }
     return(
       <nav className={drawerClasses} >
-        <NavigationItem active={this.activeitem}/>
+        <NavigationItem clickEvent={this.props.closeSidebar}/>
       </nav>
     );
   }
