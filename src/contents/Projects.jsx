@@ -6,6 +6,7 @@ import classificationIcon from "../assets/icons/classification.svg";
 import estimationIcon from "../assets/icons/estimate.svg";
 import websiteIcon from "../assets/icons/responsive.svg";
 import calculatorIcon from "../assets/icons/calculator.svg";
+import weatherIcon from "../assets/icons/weather.svg";
 import "./Projects.css"
 
 class Projects extends Component {
@@ -84,6 +85,14 @@ class Projects extends Component {
           details:
             "A simple calculator used for addition, substraction, multiplication, division, and to calculate percentage",
           link: "https://github.com/KamalByanjankar/calculator",
+        },
+        {
+          id: 9,
+          icon: weatherIcon,
+          title: "Weather App",
+          details:
+            "A weather App used to get the weather information of the city",
+          link: "https://github.com/KamalByanjankar/weather-app",
         },
       ],
     };
