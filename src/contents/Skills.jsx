@@ -13,17 +13,17 @@ const Skills = () => {
           <li className="python">
             Python<span className="percent">60%</span>
           </li>
+          <li className="react">
+            ReactJs<span className="percent">60%</span>
+          </li>
+          <li className="javascript">
+            Javascript<span className="percent">40%</span>
+          </li>
           <li className="html">
             HTML<span className="percent">60%</span>
           </li>
           <li className="css">
             CSS<span className="percent">60%</span>
-          </li>
-          <li className="javascript">
-            Javascript<span className="percent">40%</span>
-          </li>
-          <li className="react">
-            ReactJs<span className="percent">40%</span>
           </li>
         </ul>
       </div>
