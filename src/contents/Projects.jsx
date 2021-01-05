@@ -17,19 +17,19 @@ class Projects extends Component {
       javaProjects: [
         {
           id: 1,
-          icon: networkingIcon,
-          title: "Protocol Emulator for IPv4",
-          details:
-            "A telecommunication protocol used to transfer messages from host to destination using shortest path",
-          link: "https://github.com/KamalByanjankar/ProtocolEmulatorforIPv4",
-        },
-        {
-          id: 2,
           icon: bankIcon,
           title: "Banking Application",
           details:
             "A Banking Application using Spring boot, Hibernate and Thymeleaf",
           link: "https://github.com/KamalByanjankar/BankApplication",
+        },
+        {
+          id: 2,
+          icon: networkingIcon,
+          title: "Protocol Emulator for IPv4",
+          details:
+            "A telecommunication protocol used to transfer messages from host to destination using shortest path",
+          link: "https://github.com/KamalByanjankar/ProtocolEmulatorforIPv4",
         },
       ],
       pythonProjects: [
@@ -64,22 +64,14 @@ class Projects extends Component {
       javascriptProjects: [
         {
           id: 6,
-          icon: websiteIcon,
-          title: "Personal Website using HTML, CSS and Javascript",
+          icon: weatherIcon,
+          title: "Weather App",
           details:
-            "Portfolio using HTML, CSS and Javascript",
-          link: "https://github.com/KamalByanjankar/kamalbyanjankar.github.io",
+            "A weather App used to get the weather information of the city",
+          link: "https://github.com/KamalByanjankar/weather-app",
         },
         {
           id: 7,
-          icon: websiteIcon,
-          title: "Personal Website using ReactJs",
-          details:
-            "Portfolio using ReactJs",
-          link: "https://github.com/KamalByanjankar/Portfolio",
-        },
-        {
-          id: 8,
           icon: calculatorIcon,
           title: "Simple Calculator",
           details:
@@ -87,12 +79,20 @@ class Projects extends Component {
           link: "https://github.com/KamalByanjankar/calculator",
         },
         {
-          id: 9,
-          icon: weatherIcon,
-          title: "Weather App",
+          id: 8,
+          icon: websiteIcon,
+          title: "Personal Website using ReactJs",
           details:
-            "A weather App used to get the weather information of the city",
-          link: "https://github.com/KamalByanjankar/weather-app",
+            "Portfolio using ReactJs",
+          link: "https://github.com/KamalByanjankar/Portfolio",
+        },
+        {
+          id: 9,
+          icon: websiteIcon,
+          title: "Personal Website using HTML, CSS and Javascript",
+          details:
+            "Portfolio using HTML, CSS and Javascript",
+          link: "https://github.com/KamalByanjankar/kamalbyanjankar.github.io",
         },
       ],
     };
