@@ -112,9 +112,9 @@ class Projects extends Component {
           <label>
             <button
               onClick={() => this.toggle(1)}
-              className={this.state.projectId === 1 ? "select" : ""}
+              className={this.state.projectId === 3 ? "select" : ""}
             >
-              Java
+              ReactJs
             </button>
           </label>
           <label>
@@ -128,9 +128,9 @@ class Projects extends Component {
           <label>
             <button
               onClick={() => this.toggle(3)}
-              className={this.state.projectId === 3 ? "select" : ""}
+              className={this.state.projectId === 1 ? "select" : ""}
             >
-              ReactJs
+              Java
             </button>
           </label>
         </div>
@@ -142,7 +142,7 @@ class Projects extends Component {
               <li
                 key={index}
                 className={
-                  this.state.projectId === 1 ? "show-projects" : "none"
+                  this.state.projectId === 3 ? "show-projects" : "none"
                 }
               >
                 <img src={item.icon} alt="Project Logo"></img>
@@ -192,7 +192,7 @@ class Projects extends Component {
               <li
                 key={item.id}
                 className={
-                  this.state.projectId === 3 ? "show-projects" : "none"
+                  this.state.projectId === 1 ? "show-projects" : "none"
                 }
               >
                 <img src={item.icon} alt="Project logo"></img>
