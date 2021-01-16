@@ -19,11 +19,11 @@ function App() {
         <OnClickHandler/>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/education" component={Education} />
-          <Route exact path="/skills" component={Skills} />
-          <Route exact path="/projects" component={Projects} />
-          <Route exact path="/contact" component={Contact} />
+          <Route path="/about" component={About} />
+          <Route path="/education" component={Education} />
+          <Route path="/skills" component={Skills} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/contact" component={Contact} />
         </Switch>
       </div>
     </Router>

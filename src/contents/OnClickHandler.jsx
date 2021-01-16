@@ -1,40 +1,38 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import SideDrawer from '../components/SideDrawer/SideDrawer';
 import BackDrop from '../components/Backdrop/Backdrop';
 import Navbar from '../components/Navbar/Navbar';
 
-class ClickHandler extends Component {
-    state = {  
-        sideDrawerOpen: false,
-    };
 
-    drawerToggleClickHandler = () => {
-        this.setState((prevState) => {
-            return {sideDrawerOpen: !prevState.sideDrawerOpen};
-        });
-    };
+const ClickHandler = () => {
+    const [sideDrawerOpen, setSideDrawerOpen] = useState(false)
 
-    backDropClickHandler = () => {
-        this.setState({sideDrawerOpen: false});
-    };
-
-    render() { 
-        let backDrop;
-
-
-        if(this.state.sideDrawerOpen){ 
-            backDrop = <BackDrop clickHandler={this.backDropClickHandler}/>
-        }
-
-        return ( 
-            <div>
-                <Navbar drawerClickHandler = {this.drawerToggleClickHandler}/>
-                <SideDrawer show={this.state.sideDrawerOpen} closeSidebar={this.drawerToggleClickHandler}/>  
-                {backDrop}
-            </div>
+    const drawerToggleClickHandler = () => (
+        setSideDrawerOpen(prevState => {
+            return(!prevState.sideDrawerOpen)
             
-         );
+        })
+    )    
+
+    const backDropClickHandler = () => (
+        setSideDrawerOpen(false)
+    );
+
+    let backDrop;
+
+    if(sideDrawerOpen){ 
+        backDrop = <BackDrop clickHandler={backDropClickHandler}/>
     }
+
+
+    return ( 
+        <div>
+            <Navbar drawerClickHandler = {drawerToggleClickHandler}/>
+            <SideDrawer show={sideDrawerOpen} closeSidebar={drawerToggleClickHandler}/>  
+            {backDrop}
+        </div>
+        
+    );
 }
  
 export default ClickHandler;
