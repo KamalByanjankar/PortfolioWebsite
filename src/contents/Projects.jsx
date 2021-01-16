@@ -111,7 +111,7 @@ class Projects extends Component {
         <div className="btn-align">
           <label>
             <button
-              onClick={() => this.toggle(1)}
+              onClick={() => this.toggle(3)}
               className={this.state.projectId === 3 ? "select" : ""}
             >
               ReactJs
@@ -127,7 +127,7 @@ class Projects extends Component {
           </label>
           <label>
             <button
-              onClick={() => this.toggle(3)}
+              onClick={() => this.toggle(1)}
               className={this.state.projectId === 1 ? "select" : ""}
             >
               Java
@@ -137,10 +137,10 @@ class Projects extends Component {
 
         <hr></hr>
         <div className="projects">
-          {this.state.javaProjects.map((item, index) => {
+          {this.state.javascriptProjects.map((item, index) => {
             return (
               <li
-                key={index}
+                key={item.id}
                 className={
                   this.state.projectId === 3 ? "show-projects" : "none"
                 }
@@ -187,7 +187,7 @@ class Projects extends Component {
         </div>
 
         <div className="projects js-projects">
-          {this.state.javascriptProjects.map((item, index) => {
+          {this.state.javaProjects.map((item, index) => {
             return (
               <li
                 key={item.id}

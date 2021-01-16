@@ -1,20 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
+import NavigationItem from "../Navbar/NavigationItem";
 import './SideDrawer.css';
-import NavigationItem from '../Navbar/NavigationItem';
 
-class SideDrawer extends Component {
-  render(){
+const SideDrawer = (props) => {
     let drawerClasses = 'side-drawer';
-    if(this.props.show){
+    if(props.show){
         drawerClasses = 'side-drawer open';
     }
     return(
       <nav className={drawerClasses} >
-        <NavigationItem clickEvent={this.props.closeSidebar}/>
+        <NavigationItem clickEvent={props.closeSidebar}/>
       </nav>
     );
-  }
-    
 }
 
 export default SideDrawer;
