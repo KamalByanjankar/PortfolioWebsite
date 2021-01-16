@@ -9,7 +9,7 @@ const ClickHandler = () => {
 
     const drawerToggleClickHandler = () => (
         setSideDrawerOpen(prevState => {
-            return(!prevState.sideDrawerOpen)
+            return(!prevState)
             
         })
     )    
