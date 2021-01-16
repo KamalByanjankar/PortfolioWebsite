@@ -67,8 +67,8 @@ const Education = (props) => {
 
 
   const clickIndicator = (e) => (
-    setActiveIndex(parseInt(e.target.textContent)),
-    setLeft(userData.length - parseInt(e.target.textContent) * userData.length)
+    (setActiveIndex(parseInt(e.target.textContent)),
+    setLeft(userData.length - parseInt(e.target.textContent) * userData.length))
   )
       
 
