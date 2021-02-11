@@ -7,6 +7,7 @@ import estimationIcon from "../assets/icons/estimate.svg";
 import websiteIcon from "../assets/icons/responsive.svg";
 import calculatorIcon from "../assets/icons/calculator.svg";
 import weatherIcon from "../assets/icons/weather.svg";
+import chatIcon from "../assets/icons/chatIcon.svg";
 import "./Projects.css"
 
 
@@ -62,6 +63,14 @@ const Projects = () => {
   ])
   
   const [javascriptProjects] = useState([
+    {
+      id: 10,
+      icon: chatIcon,
+      title: "Chat clone",
+      details:
+        "A messenger chat clone used to send and receive message in real time using firebase as a backend and firestore to save the messages",
+      link: "https://github.com/KamalByanjankar/chat-clone",
+    },
     {
       id: 6,
       icon: weatherIcon,
