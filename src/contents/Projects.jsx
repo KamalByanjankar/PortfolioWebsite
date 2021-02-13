@@ -68,7 +68,7 @@ const Projects = () => {
       icon: chatIcon,
       title: "Chat clone",
       details:
-        "A messenger chat clone used to send and receive message in real time using firebase as a backend and firestore to save the messages",
+        "A messenger chat clone used to send and receive message in real time using Reactjs as frontend, firebase as a backend and firestore to save the messages",
       link: "https://github.com/KamalByanjankar/chat-clone",
     },
     {
@@ -76,7 +76,7 @@ const Projects = () => {
       icon: weatherIcon,
       title: "Weather App",
       details:
-        "A weather App used to get the weather information of the city",
+        "A weather App used to get the weather information of the city using Reactjs and fetch the weather data from openweathermap api",
       link: "https://github.com/KamalByanjankar/weather-app",
     },
     {
@@ -84,7 +84,7 @@ const Projects = () => {
       icon: calculatorIcon,
       title: "Simple Calculator",
       details:
-        "A simple calculator used for addition, substraction, multiplication, division, and to calculate percentage",
+        "A simple calculator used for addition, substraction, multiplication, division, and to calculate percentage using Reactjs",
       link: "https://github.com/KamalByanjankar/calculator",
     },
     {
