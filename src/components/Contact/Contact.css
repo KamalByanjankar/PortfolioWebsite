@@ -1,9 +1,9 @@
-.contact__wrapper {
+.contact__info {
   display: flex;
   flex-direction: row;
 }
 
-.contact__wrapper > li {
+.contact__info > li {
   width: 20%;
   margin: 20px 20px 0 0;
   padding: 20px;
@@ -16,7 +16,7 @@
   list-style: none;
 }
 
-.contact__wrapper > li:hover {
+.contact__info > li:hover {
   top: -5px;
   transition: 0.5s ease-out;
 }
@@ -41,11 +41,11 @@
 }
 
 @media (max-width: 1024px) {
-  .contact__wrapper {
+  .contact__info {
     flex-wrap: wrap;
   }
 
-  .contact__wrapper > li {
+  .contact__info > li {
     width: 100%;
     padding: 0px;
   }
@@ -61,11 +61,11 @@
 }
 
 @media (max-width: 768px) {
-  .contact__wrapper {
+  .contact__info {
     flex-wrap: wrap;
   }
 
-  .contact__wrapper > li {
+  .contact__info > li {
     width: 46%;
     padding: 0px;
     flex: 0 1 41%;

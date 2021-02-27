@@ -46,7 +46,7 @@ const userData = [
   },
 ]
 
-const Education = (props) => {
+const Education = () => {
   const [activeIndex, setActiveIndex] = useState(1)
   const [left, setLeft] = useState(0)
 

@@ -22,35 +22,39 @@ const contact = [
   },
 ]
 
-const Contact = (props) => {
-
+const Contact = () => {
   return (
     <div className="header">
       <h1>Contact</h1>
       <div className="contact__wrapper">
-        {contact.map((item) => {
-          return (
-            <li key={item.title}>
-              <a
-                className="contact__link"
-                href={item.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img 
-                  className="contact__image"
-                  src={item.icon} 
-                  alt="Contact logo"
-                />
-                <p className="contact__details">{item.title}</p>
-                <p className="contact__details">{item.subtitle}</p>
-                <p className="contact__details">{item.country}</p>
-              </a>
-            </li>
-          );
-        })}
+        <div className="contact__info">
+          {contact.map((item) => {
+            return (
+              <li key={item.title}>
+                <a
+                  className="contact__link"
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img 
+                    className="contact__image"
+                    src={item.icon} 
+                    alt="Contact logo"
+                  />
+                  <div className="contact__details">
+                    <p className="">{item.title}</p>
+                    <p className="contact__details">{item.subtitle}</p>
+                    <p className="contact__details">{item.country}</p>
+                  </div>
+                </a>
+              </li>
+            );
+          })}
+        </div>
+        
       </div>
-      <Social></Social>
+      <Social />
     </div>
   );
 } 
