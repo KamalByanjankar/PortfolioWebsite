@@ -13,6 +13,12 @@
   border-radius: 10px;
   background: #cad2d9;
   cursor: pointer;
+  list-style: none;
+}
+
+.contact__wrapper > li:hover {
+  top: -5px;
+  transition: 0.5s ease-out;
 }
 
 .contact__image {
@@ -27,11 +33,6 @@
 .contact__details {
   font-size: 15px;
   text-align: center;
-}
-
-.contact__wrapper > li:hover {
-  top: -5px;
-  transition: 0.5s ease-out;
 }
 
 .contact__link {
