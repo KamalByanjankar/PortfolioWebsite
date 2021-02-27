@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";  
-import Home from "../contents/Home";
-import About from "../contents/About";
-import Education from "../contents/Education";
-import Skills from "../contents/Skills";
-import Projects from "../contents/Projects";
-import Contact from "../contents/Contact";
+import Home from "../components/Home/Home";
+import About from "../components/About/About";
+import Education from "../components/Education/Education";
+import Skills from "../components/Skills/Skills";
+import Projects from "../components/Projects/Projects";
+import Contact from "../components/Contact/Contact";
 // import CustomChatbot from "../components/Chatbot/CustomChatbot";
 import OnClickHandler from "../contents/OnClickHandler";
 

@@ -55,7 +55,7 @@ li.javascript:after {
 
 @keyframes javascript {
   to {
-    width: 40%;
+    width: 60%;
   }
 }
 
@@ -65,7 +65,7 @@ li.html:after {
 
 @keyframes html {
   to {
-    width: 60%;
+    width: 70%;
   }
 }
 
@@ -75,7 +75,7 @@ li.css:after {
 
 @keyframes css {
   to {
-    width: 60%;
+    width: 70%;
   }
 }
 
@@ -85,7 +85,7 @@ li.react:after {
 
 @keyframes react {
   to {
-    width: 60%;
+    width: 70%;
   }
 }
 

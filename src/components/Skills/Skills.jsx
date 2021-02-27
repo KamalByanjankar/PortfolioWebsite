@@ -14,16 +14,16 @@ const Skills = () => {
             Python<span className="percent">60%</span>
           </li>
           <li className="react">
-            ReactJs<span className="percent">60%</span>
+            ReactJs<span className="percent">70%</span>
           </li>
           <li className="javascript">
-            Javascript<span className="percent">40%</span>
+            Javascript<span className="percent">60%</span>
           </li>
           <li className="html">
-            HTML<span className="percent">60%</span>
+            HTML<span className="percent">70%</span>
           </li>
           <li className="css">
-            CSS<span className="percent">60%</span>
+            CSS<span className="percent">70%</span>
           </li>
         </ul>
       </div>
