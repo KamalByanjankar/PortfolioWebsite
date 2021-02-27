@@ -114,11 +114,11 @@ const Projects = () => {
   return (
     <div className="header">
       <h1>Projects</h1>
-      <div className="btn-align">
+      <div className="projects__button">
         <label>
           <button
             onClick={() => toggle(3)}
-            className={projectId === 3 ? "select" : ""}
+            className={projectId === 3 ? "projects__select" : ""}
           >
             ReactJs
           </button>
@@ -126,7 +126,7 @@ const Projects = () => {
         <label>
           <button
             onClick={() => toggle(2)}
-            className={projectId === 2 ? "select" : ""}
+            className={projectId === 2 ? "projects__select" : ""}
           >
             Python
           </button>
@@ -134,28 +134,32 @@ const Projects = () => {
         <label>
           <button
             onClick={() => toggle(1)}
-            className={projectId === 1 ? "select" : ""}
+            className={projectId === 1 ? "projects__select" : ""}
           >
             Java
           </button>
         </label>
       </div>
 
-      <hr></hr>
-      <div className="projects">
-        {javascriptProjects.map((item, index) => {
+      <hr/>
+      <div className="projects__container">
+        {javascriptProjects.map((item) => {
           return (
             <li
               key={item.id}
               className={
-                projectId === 3 ? "show-projects" : "none"
+                projectId === 3 ? "projects__show" : "projects__none"
               }
             >
-              <img src={item.icon} alt="Project Logo"></img>
-              <h4>{item.title}</h4>
-              <p className="color size">{item.details}</p>
+              <img 
+                src={item.icon} 
+                alt="Project Logo" 
+                className="projects__logo"
+              />
+              <h4 className="projects__title">{item.title}</h4>
+              <p className="projects__overview">{item.details}</p>
               <a
-                className="link color"
+                className="projects__link"
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -167,20 +171,24 @@ const Projects = () => {
         })}
       </div>
 
-      <div className="projects">
-        {pythonProjects.map((item, index) => {
+      <div className="projects__container">
+        {pythonProjects.map((item) => {
           return (
             <li
               key={item.id}
               className={
-                projectId === 2 ? "show-projects" : "none"
+                projectId === 2 ? "projects__show" : "projects__none"
               }
             >
-              <img src={item.icon} alt="Project logo"></img>
+              <img 
+                src={item.icon} 
+                alt="Project logo"
+                className="projects__logo"
+              />
               <h4>{item.title}</h4>
-              <p className="color size">{item.details}</p>
+              <p className="projects__overview">{item.details}</p>
               <a
-                className="link color"
+                className="projects__link"
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -192,20 +200,24 @@ const Projects = () => {
         })}
       </div>
 
-      <div className="projects js-projects">
-        {javaProjects.map((item, index) => {
+      <div className="projects__container">
+        {javaProjects.map((item) => {
           return (
             <li
               key={item.id}
               className={
-                projectId === 1 ? "show-projects" : "none"
+                projectId === 1 ? "projects__show" : "projects__none"
               }
             >
-              <img src={item.icon} alt="Project logo"></img>
+              <img 
+                src={item.icon} 
+                alt="Project logo" 
+                className="projects__logo" 
+              />
               <h4>{item.title}</h4>
-              <p className="color size">{item.details}</p>
+              <p className="projects__overview">{item.details}</p>
               <a
-                className="link color"
+                className="projects__link"
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"

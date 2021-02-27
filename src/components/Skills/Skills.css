@@ -1,11 +1,11 @@
-.skills li {
+.skills__contents > li {
   position: relative;
   list-style: none;
   margin: 40px 0;
   right: 40px;
 }
 
-.skills li::before {
+.skills__contents > li::before {
   content: "";
   position: absolute;
   top: calc(100% + 10px);
@@ -16,7 +16,7 @@
   border-radius: 10px;
 }
 
-.skills li::after {
+.skills__contents > li::after {
   content: "";
   position: absolute;
   top: calc(100% + 10px);
@@ -89,7 +89,7 @@ li.react:after {
   }
 }
 
-.percent {
+.skills__percent {
   font-size: 15px;
   right: 30px;
   position: absolute;
@@ -97,32 +97,32 @@ li.react:after {
 }
 
 @media (max-width: 1366px) {
-  .percent {
+  .skills__percent {
     right: 5px;
   }
 }
 
 @media (max-width: 1024px) {
-  .percent {
+  .skills__percent {
     right: -15px;
   }
 }
 
 @media (max-width: 768px) {
-  .skills li {
+  .skills__contents > li {
     margin: 34px 0;
   }
 
-  .skills li::before {
+  .skills__contents > li::before {
     width: 100%;
     height: 12px;
   }
 
-  .skills li::after {
+  .skills__contents > li::after {
     height: 12px;
   }
 
-  .percent {
+  .skills__percent {
     font-size: 15px;
     right: -36px;
   }

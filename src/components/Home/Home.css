@@ -1,7 +1,8 @@
-.pic {
-  width: 200px;
-  border-radius: 50%;
-  margin: 20px;
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
@@ -10,11 +11,10 @@
   margin-left: 250px;
 }
 
-.home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.home__image {
+  width: 200px;
+  border-radius: 50%;
+  margin: 20px;
 }
 
 /* .typingeffect {
@@ -22,39 +22,13 @@
     margin-bottom: 30px;
   } */
 
-.social {
-  position: absolute;
-  margin-top: 22px;
-  bottom: 60px;
-}
-.social a {
-  padding-right: 10px;
-  font-size: 25px;
-}
-
-.social a:hover {
-  position: relative;
-  top: -5px;
-}
-
 @media (max-width: 768px) {
   .header {
     padding: 20px;
     margin-left: 0;
   }
 
-  pic {
+  .home__image {
     width: 185px;
-  }
-
-  .social {
-    bottom: 20px;
-  }
-  .social a {
-    font-size: 20px;
-  }
-
-  .social a:hover {
-    top: 0;
   }
 }

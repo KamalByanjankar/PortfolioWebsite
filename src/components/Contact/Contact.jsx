@@ -27,20 +27,24 @@ const Contact = (props) => {
   return (
     <div className="header">
       <h1>Contact</h1>
-      <div className="contact-wrapper">
-        {contact.map((item, index) => {
+      <div className="contact__wrapper">
+        {contact.map((item) => {
           return (
             <li key={item.title}>
               <a
-                className="contact-link"
+                className="contact__link"
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={item.icon} alt="Contact logo"></img>
-                <p>{item.title}</p>
-                <p>{item.subtitle}</p>
-                <p>{item.country}</p>
+                <img 
+                  className="contact__image"
+                  src={item.icon} 
+                  alt="Contact logo"
+                />
+                <p className="contact__details">{item.title}</p>
+                <p className="contact__details">{item.subtitle}</p>
+                <p className="contact__details">{item.country}</p>
               </a>
             </li>
           );

@@ -5,25 +5,25 @@ const Skills = () => {
   return (
     <div className="header">
       <h1>Skills</h1>
-      <div className="container">
-        <ul className="skills">
+      <div className="skills__container">
+        <ul className="skills__contents">
           <li className="java">
-            Java<span className="percent">60%</span>
+            Java<span className="skills__percent">60%</span>
           </li>
           <li className="python">
-            Python<span className="percent">60%</span>
+            Python<span className="skills__percent">60%</span>
           </li>
           <li className="react">
-            ReactJs<span className="percent">70%</span>
+            ReactJs<span className="skills__percent">70%</span>
           </li>
           <li className="javascript">
-            Javascript<span className="percent">60%</span>
+            Javascript<span className="skills__percent">60%</span>
           </li>
           <li className="html">
-            HTML<span className="percent">70%</span>
+            HTML<span className="skills__percent">70%</span>
           </li>
           <li className="css">
-            CSS<span className="percent">70%</span>
+            CSS<span className="skills__percent">70%</span>
           </li>
         </ul>
       </div>

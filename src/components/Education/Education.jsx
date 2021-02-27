@@ -76,30 +76,30 @@ const Education = (props) => {
   return (  
     <div className="header">
       <h1>Education</h1>
-      <div className="slider-parent">
-        <ul className="slider-child">
+      <div className="slider__parent">
+        <ul className="slider__child">
           {userData.map((item, index) => {
             return (
               <li
                 key={index}
                 className={
                   index + 1 === activeIndex
-                    ? "education-wrapper"
-                    : "hide"
+                    ? "education__wrapper"
+                    : "education__hide"
                 }
               >
                 <p>
                   <img
                     src={item.image}
                     alt="University logo"
-                    className="logo"
+                    className="education__logo"
                   ></img>
                   <br></br>
                   {item.title}
                   <br></br>
                   {item.duration}
                 </p>
-                <p className="details color">
+                <p className="education__details">
                   {item.university}
                   <br></br>
                   {item.address}
@@ -114,26 +114,26 @@ const Education = (props) => {
         </ul>
       </div>
 
-      <div className="buttons-wrapper">
+      <div className="buttons__wrapper">
         <FaArrowLeft
-          className="next-button"
+          className="next__button"
           onClick={prevSlide}
         ></FaArrowLeft>
         <FaArrowRight
-          className="prev-button"
+          className="prev__button"
           onClick={nextSlide}
         ></FaArrowRight>
       </div>
 
-      <div className="indicators-wrapper">
-        <ul className="indicators">
+      <div className="education__indicators">
+        <ul className="education__indicator">
           {userData.map((item, index) => {
             return (
               <li
                 key={index}
                 className={
                   index + 1 === activeIndex
-                    ? "active-indicator"
+                    ? "education__activeIndicator"
                     : ""
                 }
                 onClick={clickIndicator}
@@ -141,7 +141,7 @@ const Education = (props) => {
                 {index + 1}
               </li>
             );
-          }, this)}
+          })}
         </ul>
       </div>
     </div>

@@ -1,13 +1,5 @@
-hr {
-  width: 100%;
-}
-
-.show-projects {
-  display: block;
-}
-
-.none {
-  display: none;
+.projects__button {
+  text-align: center;
 }
 
 button {
@@ -18,46 +10,28 @@ button {
   font-size: 15px;
   cursor: pointer;
   color: #738198;
+  outline: none;
 }
 
 button:hover {
   color: black;
 }
 
-.select {
+.projects__select {
   color: black;
 }
 
-button:focus {
-  outline: 0;
+hr {
+  width: 100%;
 }
 
-.btn-align {
-  text-align: center;
-}
-
-.projects {
+.projects__container {
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
 }
 
-h4,
-p {
-  padding: 0 0 10px 0;
-  margin: 0;
-}
-
-.projects img {
-  width: 7rem;
-  height: 4rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 30px;
-}
-
-.projects li {
+.projects__container > li {
   flex: 0 1 24%;
   margin: 20px 30px 10px 0;
   padding: 30px;
@@ -68,23 +42,52 @@ p {
   background: #cad2d9;
 }
 
-.projects li:hover {
+.projects__container > li:hover {
   top: -5px;
   transition: 0.5s ease-out;
-  cursor: pointer;
 }
 
-.link {
+.projects__show {
+  display: block;
+}
+
+.projects__none {
+  display: none;
+}
+
+.projects__logo {
+  width: 7rem;
+  height: 4rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+}
+
+.projects__title,
+.projects__overview {
+  padding: 0 0 10px 0;
+  margin: 0;
+}
+
+.projects__overview {
+  font-size: 14px;
+  line-height: 1.6;
+  color: gray;
+}
+
+.projects__link {
   font-size: 12px;
   position: absolute;
   left: 65%;
   top: 90%;
   text-decoration: none;
+  color: gray;
 }
 
-.link:hover {
+.projects__link:hover {
   text-decoration: underline;
-  color: red;
+  color: blue;
 }
 
 @media (max-width: 1260px) {
@@ -94,21 +97,21 @@ p {
 }
 
 @media (max-width: 1024px) {
-  .projects {
+  .projects__container {
     display: grid;
     width: 100%;
   }
 
-  .size {
-    font-size: 16px;
+  .projects__overview {
+    font-size: 14px;
   }
 
-  .projects li {
+  .projects__container > li {
     width: 90%;
     margin: 10px auto;
   }
 
-  .link {
+  .projects__link {
     position: relative;
     font-size: 10px;
     left: 80%;
@@ -117,25 +120,25 @@ p {
 }
 
 @media (max-width: 768px) {
-  .projects {
+  .projects__container {
     display: grid;
     width: 100%;
   }
 
-  .size {
+  .projects__overview {
     font-size: 13px;
   }
 
-  .projects img {
+  .projects__logo {
     display: none;
   }
 
-  .projects li {
+  .projects__container > li {
     width: 84%;
     margin: 10px auto;
   }
 
-  .link {
+  .projects__link {
     position: relative;
     font-size: 10px;
     left: 80%;

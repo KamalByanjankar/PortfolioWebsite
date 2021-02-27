@@ -6,7 +6,7 @@ const About = () => {
   return(
     <div className="header">
       <h1>About me</h1>
-      <p className="color line-space">
+      <p className="about__lineSpace">
         I am Kamal Byanjankar and I am a software Engineer. I am pursuing my
         Master's degree in Information Technology at Frankfurt University of
         Applied Sciences. I wrote my first programming code during my Bachelor. 

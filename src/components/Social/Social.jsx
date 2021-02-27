@@ -7,6 +7,8 @@ import {
   FaXing,
 } from "react-icons/fa";
 
+import './Social.css'
+
 const Social = () => {
   return (
     <div className="social">

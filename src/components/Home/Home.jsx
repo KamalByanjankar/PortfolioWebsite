@@ -7,9 +7,13 @@ import "./Home.css";
 const Home = () => {
   return (
     <div className="home header">
-      <img src={profilepic} className="pic" alt="My pic"></img>
+      <img 
+        src={profilepic}
+        alt="My Profile Pic" 
+        className="home__image" 
+      />
       <h2>Kamal Byanjankar</h2>
-      <p className="color">Software Engineer</p>
+      <p>Software Engineer</p>
       {/* <ReactTypingEffect
         className="typingeffect"
         text={["I am Kamal Byanjankar", "I am a software Engineer"]}

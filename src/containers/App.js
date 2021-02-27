@@ -14,7 +14,7 @@ import OnClickHandler from "../contents/OnClickHandler";
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="app">
         {/* <CustomChatbot /> */}
         <OnClickHandler/>
         <Switch>
