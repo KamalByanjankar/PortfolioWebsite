@@ -18,7 +18,7 @@ const contact = [
   },
 ]
 
-const contactEmail = process.env.REACT_APP_EMAIL_ID
+const contactEmail = "kamalbyanjankar@gmail.com"
 
 const Contact = () => {
   const [name, setName] = useState("")
