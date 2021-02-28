@@ -100,7 +100,7 @@ const Contact = () => {
                 id="message"
                 name="message"
                 cols = "46"
-                rows = "10"
+                rows = "8"
                 onChange={(e) => setMessage(e.target.value)}
                 className="contact__input contact__textarea"
               />
