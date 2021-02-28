@@ -1,27 +1,22 @@
 .social {
   position: absolute;
-  margin-top: 22px;
-  bottom: 60px;
+  margin: 40px 0 20px 20px;
+  bottom: 20px;
 }
 .social a {
   padding-right: 10px;
   font-size: 25px;
+  position: relative;
+  top: 0;
 }
 
 .social a:hover {
-  position: relative;
   top: -5px;
+  transition: 0.5s ease-out;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1260px) {
   .social {
-    bottom: 20px;
-  }
-  .social a {
-    font-size: 20px;
-  }
-
-  .social a:hover {
-    top: 0;
+    bottom: auto;
   }
 }
