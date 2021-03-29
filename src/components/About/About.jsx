@@ -7,10 +7,11 @@ const About = () => {
     <div className="header">
       <h1>About me</h1>
       <p className="about__lineSpace">
-        I am Kamal Byanjankar and I am a software Engineer. I am pursuing my
+        I am Kamal Byanjankar and I am a software Engineer. I am doing my
         Master's degree in Information Technology at Frankfurt University of
-        Applied Sciences. I wrote my first programming code during my Bachelor. 
-        Then I gradually improved my skills and completed my academic projects.
+        Applied Sciences. I wrote my first programming code when I was studying my Bachelor. 
+        After starting my Masters, I have to do curriculum projects from which 
+        I gradually improved my skills and completed my academic projects.
         Besides my curriculum projects, I have done projects on Java, Python and ReactJs.
         All the projects are available in Github.
       </p>
