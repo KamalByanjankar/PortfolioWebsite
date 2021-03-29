@@ -8,6 +8,7 @@ import websiteIcon from "../../assets/icons/responsive.svg";
 import calculatorIcon from "../../assets/icons/calculator.svg";
 import weatherIcon from "../../assets/icons/weather.svg";
 import chatIcon from "../../assets/icons/chatIcon.svg";
+import netflixIcon from '../../assets/icons/netflix.png';
 import "./Projects.css"
 
 
@@ -61,6 +62,13 @@ const pythonProjects = [
 ]
 
 const javascriptProjects = [
+  {
+    id: 11,
+    icon: netflixIcon,
+    title: "Netflix clone",
+    details: "An online movie streaming app uisng Reactjs to fetch movies from the TMDb movie database, firebase authentication to login and create an account as well as play trailer using youtube",
+    link: "https://github.com/KamalByanjankar/netflix-clone",
+  },
   {
     id: 10,
     icon: chatIcon,
