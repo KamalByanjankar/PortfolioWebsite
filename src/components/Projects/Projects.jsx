@@ -9,13 +9,14 @@ import calculatorIcon from "../../assets/icons/calculator.svg";
 import weatherIcon from "../../assets/icons/weather.svg";
 import chatIcon from "../../assets/icons/chatIcon.svg";
 import netflixIcon from '../../assets/icons/netflix.png';
+import authorizationIcon from '../../assets/icons/authorization.png';
 import "./Projects.css"
 
 
 const javaProjects = [
   {
     id: 12,
-    icon: 1,
+    icon: authorizationIcon,
 
     title: "jwt authorization",
     details:
