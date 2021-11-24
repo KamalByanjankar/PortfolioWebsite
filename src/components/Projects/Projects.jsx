@@ -14,6 +14,15 @@ import "./Projects.css"
 
 const javaProjects = [
   {
+    id: 12,
+    icon: 1,
+
+    title: "jwt authorization",
+    details:
+      "Spring Boot authentication and authorization using JWT, Spring security and Postgresql",
+    link: "https://github.com/KamalByanjankar/jwt-authorization",
+  },
+  {
     id: 1,
     icon: bankIcon,
 
