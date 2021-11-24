@@ -113,7 +113,7 @@ const javascriptProjects = [
 
 const Projects = () => {
   const [projectId, setProjectId] = useState('')
-    
+
 
   const toggle = (id) => (
     setProjectId(id)
@@ -149,7 +149,7 @@ const Projects = () => {
         </label>
       </div>
 
-      <hr/>
+      <hr />
       <div className="projects__container">
         {javascriptProjects.map((item) => {
           return (
@@ -159,9 +159,9 @@ const Projects = () => {
                 projectId === 3 ? "projects__show" : "projects__none"
               }
             >
-              <img 
-                src={item.icon} 
-                alt="Project Logo" 
+              <img
+                src={item.icon}
+                alt="Project Logo"
                 className="projects__logo"
               />
               <h4 className="projects__title">{item.title}</h4>
@@ -188,8 +188,8 @@ const Projects = () => {
                 projectId === 2 ? "projects__show" : "projects__none"
               }
             >
-              <img 
-                src={item.icon} 
+              <img
+                src={item.icon}
                 alt="Project logo"
                 className="projects__logo"
               />
@@ -217,10 +217,10 @@ const Projects = () => {
                 projectId === 1 ? "projects__show" : "projects__none"
               }
             >
-              <img 
-                src={item.icon} 
-                alt="Project logo" 
-                className="projects__logo" 
+              <img
+                src={item.icon}
+                alt="Project logo"
+                className="projects__logo"
               />
               <h4>{item.title}</h4>
               <p className="projects__overview">{item.details}</p>
