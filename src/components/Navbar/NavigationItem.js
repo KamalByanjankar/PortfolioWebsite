@@ -1,41 +1,17 @@
 import React from 'react';
-import Navitem from './Navitem';
+import {NavLink} from 'react-router-dom'
 
-const navigationItem = (props) => {
+const NavigationItem = (props) => {
     return(
-        <ul>
-            <Navitem 
-                clickEvents={props.clickEvent} 
-                item="Home" tolink="/" 
-            ></Navitem>
-            <Navitem
-                clickEvents={props.clickEvent}
-                item="About"
-                tolink="/about"
-            ></Navitem>
-            <Navitem
-                clickEvents={props.clickEvent}
-                item="Education"
-                tolink="/education"
-            ></Navitem>
-            <Navitem
-                clickEvents={props.clickEvent}
-                item="Skills"
-                tolink="/skills"
-            ></Navitem>
-            <Navitem
-                clickEvents={props.clickEvent}
-                item="Projects"
-                tolink="/projects"
-            ></Navitem>
-            <Navitem
-                clickEvents={props.clickEvent}
-                item="Contact"
-                tolink="/contact"
-            ></Navitem>
-        </ul>
-                
+        <ul className="navigationItem_ul">
+            <li><NavLink exact activeStyle={{color:'#fa923f'}} to="" onClick={props.clickEvent}> Home </NavLink></li>
+            <li><NavLink activeStyle={{color:'#fa923f'}} to="about" onClick={props.clickEvent}> About </NavLink></li>
+            <li><NavLink activeStyle={{color:'#fa923f'}} to="education" onClick={props.clickEvent}> Education </NavLink></li>
+            <li><NavLink activeStyle={{color:'#fa923f'}} to="skills" onClick={props.clickEvent}> Skills </NavLink></li>
+            <li><NavLink activeStyle={{color:'#fa923f'}} to="projects" onClick={props.clickEvent}> Projects </NavLink></li>
+            <li><NavLink activeStyle={{color:'#fa923f'}} to="contact" onClick={props.clickEvent}> Contact </NavLink></li>
+        </ul>     
     )
 }
 
-export default navigationItem;
+export default NavigationItem;
