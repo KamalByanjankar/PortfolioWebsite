@@ -39,6 +39,26 @@ li.java:after {
   }
 }
 
+li.springBoot:after {
+  animation-name: springBoot;
+}
+
+@keyframes springBoot {
+  to {
+    width: 65%;
+  }
+}
+
+li.database:after {
+  animation-name: database;
+}
+
+@keyframes database {
+  to {
+    width: 60%;
+  }
+}
+
 li.python:after {
   animation-name: python;
 }
