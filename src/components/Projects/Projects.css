@@ -1,0 +1,148 @@
+.projects__button {
+  text-align: center;
+}
+
+button {
+  text-transform: uppercase;
+  border: none;
+  background: transparent;
+  padding: 0 12px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #738198;
+  outline: none;
+}
+
+button:hover {
+  color: black;
+}
+
+.projects__select {
+  color: black;
+}
+
+.projects__container {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+
+.projects__container > li {
+  flex: 0 1 24%;
+  margin: 20px 30px 10px 0;
+  padding: 30px;
+  position: relative;
+  top: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  background: #cad2d9;
+}
+
+.projects__container > li:hover {
+  top: -5px;
+  transition: 0.5s ease-out;
+}
+
+.projects__show {
+  display: block;
+}
+
+.projects__none {
+  display: none;
+}
+
+.projects__logo {
+  width: 7rem;
+  height: 4rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+}
+
+.projects__title,
+.projects__overview {
+  padding: 0 0 10px 0;
+  margin: 0;
+}
+
+.projects__overview {
+  font-size: 14px;
+  line-height: 1.6;
+  color: gray;
+}
+
+.projects__link {
+  font-size: 12px;
+  position: absolute;
+  left: 65%;
+  top: 90%;
+  text-decoration: none;
+  color: gray;
+}
+
+.projects__link:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+@media (max-width: 1260px) {
+  .projects li {
+    flex: 0 1 34%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .projects__container {
+    display: grid;
+    width: 100%;
+  }
+
+  .projects__overview {
+    font-size: 14px;
+  }
+
+  .projects__container > li {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .projects__link {
+    position: relative;
+    font-size: 10px;
+    left: 80%;
+    top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .projects__container li{
+    z-index: -999;
+  }
+
+  .projects__overview {
+    font-size: 13px;
+  }
+
+  .projects__logo {
+    display: none;
+  }
+
+  .projects__container > li {
+    width: 84%;
+    margin: 10px auto;
+  }
+
+  .projects__link {
+    position: relative;
+    font-size: 10px;
+    left: 80%;
+    top: 10px;
+  }
+}

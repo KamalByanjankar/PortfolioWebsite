@@ -1,0 +1,41 @@
+{
+    "education":
+    [
+        {
+        "image": "images/frauni.jpg",
+        "title": "Master in Engineering in Information Technology",
+        "duration": "October 2017 - Present",
+        "university": "Frankfurt University of Applied Sciences",
+        "address": "Nibelungenplatz 1",
+        "city": "60318 Frankfurt am Main",
+        "country": "Germany"
+        },
+        {
+        "image": "images/kec.jpg",
+        "title": "Bachelor in Engineering in Electronics and Communication Engineering",
+        "duration": "August 2010 - November 2014",
+        "university": "Kantipur Engineering College",
+        "address": "Dhapakhel",
+        "city": "Lalitpur 44700",
+        "country": "Nepal"
+        },
+        {
+        "image": "images/hseb.png",
+        "title": "General Science",
+        "duration": "August 2007 - July 2009",
+        "university": "Caspian Valley Higher Secondary School",
+        "address": "Kumaripati",
+        "city": "Lalitpur 44700",
+        "country": "Nepal"
+        },
+        {
+        "image": "images/mav.jpg",
+        "title": "Secondary School",
+        "duration": "January 1994 - June 2007",
+        "university": "Mahendra Adarsha Vidyashram Secondary School",
+        "address": "Godawari Sadak",
+        "city": "Satdobato, Lalitpur 44700",
+        "country": "Nepal"
+        }
+    ]
+}

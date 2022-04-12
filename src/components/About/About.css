@@ -1,0 +1,12 @@
+.about__lineSpace {
+  line-height: 2;
+}
+
+.download {
+  margin-top: 30px;
+}
+
+.download a {
+  color: black;
+  font-size: 15px;
+}

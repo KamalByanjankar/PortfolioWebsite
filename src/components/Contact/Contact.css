@@ -1,0 +1,148 @@
+.contact__wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact__form {
+  padding: 0 20px;
+}
+
+.contact__label {
+  display: block;
+  float: left;
+  width: 20%;
+  margin: 12px 0;
+}
+
+.required {
+  color: gray;
+}
+
+.contact__input {
+  padding: 10px 15px;
+  color: #eee;
+  background: #373233;
+  margin-bottom: 18px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+  width: 64%;
+}
+
+.contact__textarea {
+  resize: none;
+}
+
+.contact__button {
+  background-color: #404040;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  margin-left: 20%;
+}
+
+.contact__button:hover {
+  background-color: #fff;
+  color: #111;
+}
+
+.contact__info {
+  display: grid;
+  margin-right: 80px;
+}
+
+.contact__info > li {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  position: relative;
+  top: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  background: #cad2d9;
+  cursor: pointer;
+  list-style: none;
+}
+
+.contact__info > li:hover {
+  top: -5px;
+  transition: 0.5s ease-out;
+}
+
+.contact__details {
+  font-size: 15px;
+  text-align: center;
+}
+
+.contact__details:hover {
+  text-decoration: underline;
+}
+
+.contact__link {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 1260px) {
+  .contact__label {
+    width: 25%;
+  }
+
+  .contact__input {
+    width: 64%;
+  }
+
+  .contact__button {
+    margin-left: 25%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact__wrapper {
+    display: grid;
+  }
+
+  .contact__label {
+    width: 30%;
+  }
+
+  .contact__input {
+    width: 100%;
+  }
+
+  .contact__button {
+    margin: 10px 0 30px 0;
+  }
+
+  .contact__info > li {
+    width: 100%;
+    margin: 10px 35px;
+  }
+
+  .contact__details {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact__label {
+    width: 30%;
+  }
+
+  .contact__input {
+    width: 95%;
+  }
+
+  .contact__button {
+    margin: 10px 0 30px 0;
+  }
+
+  .contact__info > li {
+    margin: 10px 20px;
+  }
+
+  .contact__details {
+    font-size: 12px;
+  }
+}
