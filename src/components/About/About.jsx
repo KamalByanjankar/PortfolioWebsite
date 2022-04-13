@@ -4,7 +4,7 @@ import "./About.css"
 
 const About = () => {
   return(
-    <div className="header">
+    <div className="header about">
       <h1>About me</h1>
       <p className="about__lineSpace">
         I am Kamal Byanjankar and I am doing my

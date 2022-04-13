@@ -1,3 +1,11 @@
+.contact{
+  height: 80vh;
+}
+
+.contact h1{
+  margin: 60px 0 40px 0;
+}
+
 .contact__wrapper {
   display: flex;
   justify-content: space-around;
@@ -98,17 +106,17 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
   .contact__wrapper {
     display: grid;
   }
 
   .contact__label {
-    width: 30%;
+    width: 28%;
   }
 
   .contact__input {
-    width: 100%;
+    width: 96%;
   }
 
   .contact__button {

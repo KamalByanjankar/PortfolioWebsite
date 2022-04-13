@@ -122,7 +122,7 @@ const javascriptProjects = [
 ]
 
 const Projects = () => {
-  const [projectId, setProjectId] = useState('')
+  const [projectId, setProjectId] = useState(3)
 
 
   const toggle = (id) => (
@@ -138,7 +138,7 @@ const Projects = () => {
             onClick={() => toggle(3)}
             className={projectId === 3 ? "projects__select" : ""}
           >
-            ReactJs
+          ReactJs
           </button>
         </label>
         <label>
@@ -146,7 +146,7 @@ const Projects = () => {
             onClick={() => toggle(2)}
             className={projectId === 2 ? "projects__select" : ""}
           >
-            Python
+          Python
           </button>
         </label>
         <label>
@@ -154,7 +154,7 @@ const Projects = () => {
             onClick={() => toggle(1)}
             className={projectId === 1 ? "projects__select" : ""}
           >
-            Java
+          Java
           </button>
         </label>
       </div>
@@ -192,7 +192,7 @@ const Projects = () => {
       <div className="projects__container">
         {pythonProjects.map((item) => {
           return (
-            <li
+            <li 
               key={item.id}
               className={
                 projectId === 2 ? "projects__show" : "projects__none"

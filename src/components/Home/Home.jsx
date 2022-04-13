@@ -1,7 +1,7 @@
 import React from "react";
 // import ReactTypingEffect from "react-typing-effect";
 import profilepic from "../../assets/profile/kamal.png";
-import Social from "../Social/Social";
+// import Social from "../Social/Social";
 import "./Home.css";
 
 const Home = () => {
@@ -20,7 +20,7 @@ const Home = () => {
         speed={100}
         eraseDelay={700}
       /> */}
-      <Social />
+      {/* <Social /> */}
     </div>
   );
 }

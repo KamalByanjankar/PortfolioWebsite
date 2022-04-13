@@ -1,7 +1,18 @@
+.education{
+  height: 60vh;
+}
+
+.education h1{
+  margin: 40px; 
+}
+
+.education__button__wrapper{
+  position: relative;
+}
+
 .slider__parent {
   width: 610px;
   position: relative;
-  overflow: hidden;
   left: -40px;
 }
 
@@ -16,6 +27,8 @@
   border-radius: 20px;
   display: block;
   font-size: 15px;
+  position: relative;
+  left: 280px;
 }
 
 .education__hide {
@@ -28,12 +41,12 @@
 }
 
 .buttons__wrapper {
-  top: 400px;
-  left: 360px;
   width: 540px;
   display: flex;
   justify-content: space-between;
   position: absolute;
+  top: 180px;
+  left: 290px;
   cursor: pointer;
   font-size: 25px;
   color: #404040;
@@ -62,6 +75,8 @@
   transition: all 0.5s ease-out;
   list-style: none;
   line-height: 20px;
+  position: relative;
+  left: 270px;
 }
 
 .education__activeIndicator {
@@ -79,80 +94,60 @@
   padding: 20px;
 }
 
-@media (min-width: 1400px) {
-  .slider__parent {
-    margin: 0 auto;
-  }
-
-  .buttons__wrapper {
-    left: 598px;
-    font-size: 18px;
-  }
-
-  .education__indicator {
-    margin: 0 auto;
-    position: relative;
-    left: -40px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .slider__parent {
-    width: 460px;
-    left: -40px;
-  }
-
-  .slider__child {
-    width: 1840px;
-  }
-
+@media (max-width: 1250px){
   .education__wrapper {
-    width: 420px;
-    font-size: 12px;
+    width: 560px;
+    font-size: 18px;
+    left: 60px;
   }
 
   .buttons__wrapper {
-    top: 370px;
-    left: 355px;
-    width: 410px;
+    top: 150px;
+    left: 75px;
+    width: 525px;
     font-size: 20px;
   }
 
   .education__indicator {
-    width: 340px;
-  }
-
-  .education__logo {
-    width: 140px;
-    height: 100px;
+    position: relative;
+    width: 80px;
+    left: -5px;
   }
 }
 
+
 @media (max-width: 768px) {
+  .education h1{
+    margin: 12rem 0 0 0;
+  }
+
   .slider__parent {
-    width: 380px;
-    left: -40px;
+    width: 420px;
+    left: -190px;
     z-index: -999;    
   }
 
   .slider__child {
-    width: 1520px;
+    width: 1680px;
   }
 
   .education__wrapper {
-    width: 335px;
-    font-size: 10px;
+    width: 440px;
+    font-size: 14px;
+    left: 160px;
   }
 
   .buttons__wrapper {
-    top: 230px;
-    left: 28px;
-    width: 318px;
+    top: 150px;
+    left: 20px;
+    width: 420px;
     font-size: 18px;
   }
 
   .education__indicator {
-    width: 250px;
+    position: relative;
+    width: 70px;
+    left: -120px;
   }
 
   .education__indicator > li {

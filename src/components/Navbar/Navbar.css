@@ -34,6 +34,11 @@
 
 .navbar__navigation ul a:hover {
   color: #fad6b8;
+  cursor: pointer;
+}
+
+.nav-item > .active {
+  border-bottom: 1px solid #333;
 }
 
 @media (max-width: 769px){

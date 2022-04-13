@@ -1,3 +1,7 @@
+.about{
+  height: 40vh;
+}
+
 .about__lineSpace {
   line-height: 2;
 }
