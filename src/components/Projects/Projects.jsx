@@ -122,7 +122,7 @@ const javascriptProjects = [
 ]
 
 const Projects = () => {
-  const [projectId, setProjectId] = useState('')
+  const [projectId, setProjectId] = useState(3)
 
 
   const toggle = (id) => (
