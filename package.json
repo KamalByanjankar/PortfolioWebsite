@@ -23,6 +23,7 @@
     "react-scroll": "^1.8.6",
     "react-simple-chatbot": "^0.6.1",
     "react-typing-effect": "^2.0.3",
+    "serialize-javascript": "^3.1.0",
     "styled-components": "^5.1.0"
   },
   "scripts": {
