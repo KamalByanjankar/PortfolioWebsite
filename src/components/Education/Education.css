@@ -117,6 +117,11 @@
 
 
 @media (max-width: 768px) {
+  .education{
+    height: 50vh;
+    margin: 4rem 0 0 0;
+  }
+
   .education h1{
     margin: 12rem 0 0 0;
   }

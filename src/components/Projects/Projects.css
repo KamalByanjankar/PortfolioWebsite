@@ -1,6 +1,6 @@
 .projects{
   height: 100vh;
-  /* overflow-y: scroll; */
+  overflow-y: scroll;
 }
 
 .projects h1{
@@ -129,6 +129,10 @@ hr{
 }
 
 @media (max-width: 768px) {
+  .projects h1{
+    margin: 0;
+  }
+
   .projects__container {
     display: flex;
     flex-direction: column;

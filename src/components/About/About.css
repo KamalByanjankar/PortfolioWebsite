@@ -1,5 +1,5 @@
 .about{
-  height: 50vh;
+  height: 40vh;
 }
 
 .about__lineSpace {
@@ -13,4 +13,10 @@
 .download a {
   color: black;
   font-size: 15px;
+}
+
+@media (max-width: 768px){
+  .about{
+    height: 22vh;
+  }
 }
