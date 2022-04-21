@@ -34,7 +34,7 @@ const Social = () => {
         <FaInstagram />
       </a>
       <a
-        href="https://www.linkedin.com/in/kamal-byanjankar-95a692aa/"
+        href="https://www.linkedin.com/in/kamalbyanjankar/"
         target="_blank"
         rel="noopener noreferrer"
       >
