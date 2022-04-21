@@ -1,42 +1,29 @@
-.home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.header {
-  margin-left: 350px;
-}
-
-/* .header h1{
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-.home__image {
-  width: 200px;
-  border-radius: 50%;
-  margin: 20px;
-} */
-
-.home{
+#home{
+  /* background: url(../../assets/profile/kamal.png); */
+  background-color: #149ddd;
+  background-size: cover;
   height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center center; 
 }
 
-/* .typingeffect {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-  } */
+.home__container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-@media (max-width: 768px) {
-  .header {
-    padding: 20px;
-    margin-left: 0;
-  }
+.home__container > h1 {
+  margin: 0 0 10px 0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px;
+}
 
-  .home__image {
-    width: 185px;
-  }
+.home__container > p {
+  margin-bottom: 50px;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
 }

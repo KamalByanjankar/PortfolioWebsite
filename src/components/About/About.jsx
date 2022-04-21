@@ -5,9 +5,9 @@ import "./About.css"
 const About = () => {
   return(
     <div className="header about">
-      <h1>About me</h1>
+      <h1>About</h1>
       <p className="about__lineSpace">
-        I am Kamal Byanjankar and I am doing my
+        I am doing my
         Master's degree in Information Technology at Frankfurt University of
         Applied Sciences. I did my Bachelor's in Electronics and Communication Engineering 
         from Kantipur Engineering College in Nepal. During my Master's, I did my curriculum projects and
@@ -18,7 +18,7 @@ const About = () => {
         I am a motivated and open minded person, trying to acchieve my aim. I like to read, 
         listen music, and travel different places.
       </p>
-      <div className="download">
+      <div className="about__resume__download">
         <a href={file} download="Resume_Kamal_Byanjankar">
           Download Resume
         </a>

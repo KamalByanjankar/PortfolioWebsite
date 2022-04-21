@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Social from "../Social/Social";
 import "./Contact.css"
 
 // const contact = [
@@ -136,7 +135,6 @@ const Contact = () => {
           })}
         </div> */}
       </div>
-      <Social />
     </div>
   );
 } 
