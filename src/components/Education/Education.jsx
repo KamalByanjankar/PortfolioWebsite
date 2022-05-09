@@ -106,6 +106,7 @@ const Education = () => {
           </ul>
         </div>
       </div>
+      <div className="background"></div>
     </div>
   );
 }

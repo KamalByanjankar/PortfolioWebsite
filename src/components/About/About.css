@@ -48,6 +48,12 @@
 
 @media (max-width:1024px){
   .header{
-    margin: 0 130px; 
+    margin: 0 90px; 
+  }
+}
+
+@media (max-width: 796px){
+  .header{
+    margin: 0 12px;
   }
 }

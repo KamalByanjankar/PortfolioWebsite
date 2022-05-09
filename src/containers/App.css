@@ -6,3 +6,9 @@ body {
 .app {
   height: 100vh;
 }
+
+@media (max-screen: 1024px){
+  .app{
+    width: 100vw;
+  }
+}
