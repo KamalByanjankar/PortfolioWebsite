@@ -133,33 +133,16 @@ const Projects = () => {
     <div className="header projects">
       <h1>Projects</h1>
       <div className="projects__button">
-        <label>
-          <button
-            onClick={() => toggle(3)}
-            className={projectId === 3 ? "projects__select" : ""}
-          >
-          ReactJs
-          </button>
-        </label>
-        <label>
-          <button
-            onClick={() => toggle(2)}
-            className={projectId === 2 ? "projects__select" : ""}
-          >
-          Python
-          </button>
-        </label>
-        <label>
-          <button
-            onClick={() => toggle(1)}
-            className={projectId === 1 ? "projects__select" : ""}
-          >
-          Java
-          </button>
-        </label>
+        <ul>
+          <li onClick={() => toggle(3)}
+            className={projectId === 3 ? "projects__select" : ""}>ReactJs</li>
+          <li onClick={() => toggle(2)}
+            className={projectId === 2 ? "projects__select" : ""}>Python</li>
+          <li onClick={() => toggle(1)}
+            className={projectId === 1 ? "projects__select" : ""}>Java</li>
+        </ul>
       </div>
-
-      <hr />
+      
       <div className="projects__container">
         {javascriptProjects.map((item) => {
           return (
