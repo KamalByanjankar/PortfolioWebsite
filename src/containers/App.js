@@ -7,7 +7,7 @@ import About from "../components/About/About";
 import Education from "../components/Education/Education";
 import Skills from "../components/Skills/Skills";
 import Projects from "../components/Projects/Projects";
-// import Contact from "../components/Contact/Contact";
+import Contact from "../components/Contact/Contact";
 // import CustomChatbot from "../components/Chatbot/CustomChatbot";
 
 function App() {
@@ -29,9 +29,9 @@ function App() {
       <div id="projects">
         <Projects />
       </div>
-      {/* <div id="contact">
+      <div id="contact">
         <Contact />
-      </div> */}
+      </div>
     </div>
   );
 }
