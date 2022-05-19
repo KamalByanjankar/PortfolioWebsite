@@ -46,8 +46,9 @@ const Contact = () => {
       <h1>Contact</h1>
       <div className="contact__wrapper">
         <div className="contact__details">
-          <p>contact details gone here</p>
+          
         </div>
+
         <div className="contact__form">
           <form onSubmit={submitForm}>
             <div>
