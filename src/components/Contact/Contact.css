@@ -18,6 +18,22 @@
   width: 65%;
   box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
   margin-right: 25px;
+  padding: 52px 30px;
+}
+
+.contact__details h4{
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #050d18;
+}
+
+.contact__details p{
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #173b6c;
 }
 
 .contact__form {

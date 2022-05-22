@@ -46,7 +46,20 @@ const Contact = () => {
       <h1>Contact</h1>
       <div className="contact__wrapper">
         <div className="contact__details">
-          
+          <div className="contact__details__address">
+            <h4>Location:</h4>
+            <p>Vilbeler Landstraße 236, 60388 Frankfurt am Main, Germany</p>
+          </div>
+
+          <div className="contact__details__email"> 
+            <h4>Email:</h4>
+            <p>kamalbyanjankar@gmail.com</p>
+          </div>
+
+          <div className="contact__details__phone">
+            <h4>Phone:</h4>
+            <p>+49 17675893645</p>
+          </div>
         </div>
 
         <div className="contact__form">
