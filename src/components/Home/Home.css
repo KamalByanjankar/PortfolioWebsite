@@ -1,11 +1,12 @@
 #home{
-  /* background: url(../../assets/profile/kamal.png); */
-  background-color: #149ddd;
+  background: url(../../assets/profile/test.jpg);
+  /* background-color: #149ddd; */
   background-size: cover;
+  /* background-repeat: no-repeat; */
   height: 100vh;
   width: 100%;
   background-attachment: fixed;
-  background-position: center center; 
+  background-position: center top; 
 }
 
 .home__container{
@@ -17,13 +18,14 @@
 
 .home__container > h1 {
   margin: 0 0 10px 0;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 700;
   line-height: 56px;
+  color: #173b6c;
 }
 
 .home__container > p {
   margin-bottom: 50px;
-  font-size: 20px;
-  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  color: #173b6c;
 }

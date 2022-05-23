@@ -84,102 +84,17 @@
   transition: all 0.3s ease-in;
 }
 
-/* .contact__info {
-  display: grid;
-  margin-right: 80px;
-}
-
-.contact__info > li {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 20px;
-  position: relative;
-  top: 0;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 10px;
-  background: #cad2d9;
-  cursor: pointer;
-  list-style: none;
-}
-
-.contact__info > li:hover {
-  top: -5px;
-  transition: 0.5s ease-out;
-}
-
-.contact__details {
-  font-size: 15px;
-  text-align: center;
-}
-
-.contact__details:hover {
-  text-decoration: underline;
-}
-
-.contact__link {
-  text-decoration: none;
-  color: black;
-}
-
-@media (max-width: 1260px) {
-  .contact__label {
-    width: 25%;
+@media (max-width: 860px){
+  .contact__wrapper{
+    flex-direction: column;
   }
 
-  .contact__input {
-    width: 64%;
+  .contact__details{
+    margin-bottom: 30px;
+    width: 100%; 
   }
 
-  .contact__button {
-    margin-left: 25%;
-  }
-}
-
-@media (max-width: 1100px) {
-  .contact__wrapper {
-    display: grid;
-  }
-
-  .contact__label {
-    width: 28%;
-  }
-
-  .contact__input {
-    width: 96%;
-  }
-
-  .contact__button {
-    margin: 10px 0 30px 0;
-  }
-
-  .contact__info > li {
+  .contact__form{
     width: 100%;
-    margin: 10px 35px;
-  }
-
-  .contact__details {
-    font-size: 16px;
   }
 }
-
-@media (max-width: 768px) {
-  .contact__label {
-    width: 30%;
-  }
-
-  .contact__input {
-    width: 95%;
-  }
-
-  .contact__button {
-    margin: 10px 0 30px 0;
-  }
-
-  .contact__info > li {
-    margin: 10px 20px;
-  }
-
-  .contact__details {
-    font-size: 12px;
-  }
-} */
