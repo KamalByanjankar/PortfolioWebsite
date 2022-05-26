@@ -1,8 +1,6 @@
 #home{
-  background: url(../../assets/profile/test.jpg);
-  /* background-color: #149ddd; */
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../../assets/profile/test.jpg);
   background-size: cover;
-  /* background-repeat: no-repeat; */
   height: 100vh;
   width: 100%;
   background-attachment: fixed;
@@ -19,13 +17,14 @@
 .home__container > h1 {
   margin: 0 0 10px 0;
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 56px;
-  color: #173b6c;
+  color: #fff;
 }
 
 .home__container > p {
   margin-bottom: 50px;
   font-size: 30px;
-  color: #173b6c;
+  color: #fff;
+  font-weight: 600;
 }

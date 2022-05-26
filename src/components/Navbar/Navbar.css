@@ -28,6 +28,10 @@
   display: none;
 }
 
+.navbar__navigation .active {
+  color: #fff;
+}
+
 .navbar__navigation ul{
   padding: 20px;
   margin-top: 1rem;
