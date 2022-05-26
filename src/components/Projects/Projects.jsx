@@ -10,12 +10,13 @@ import weatherIcon from "../../assets/icons/weather.svg";
 import chatIcon from "../../assets/icons/chatIcon.svg";
 import netflixIcon from '../../assets/icons/netflix.png';
 import authorizationIcon from '../../assets/icons/authorization.png';
+import recognitionIcon from '../../assets/icons/recognition.png';
 import "./Projects.css"
 
 
 const javaProjects = [
   {
-    id: 12,
+    id: 103,
     icon: authorizationIcon,
 
     title: "jwt authorization",
@@ -24,7 +25,7 @@ const javaProjects = [
     link: "https://github.com/KamalByanjankar/jwt-authorization",
   },
   {
-    id: 1,
+    id: 102,
     icon: bankIcon,
 
     title: "Banking Application",
@@ -33,7 +34,7 @@ const javaProjects = [
     link: "https://github.com/KamalByanjankar/BankApplication",
   },
   {
-    id: 2,
+    id: 101,
     icon: networkingIcon,
     title: "Protocol Emulator for IPv4",
     details:
@@ -44,7 +45,14 @@ const javaProjects = [
 
 const pythonProjects = [
   {
-    id: 3,
+    id: 204,
+    icon: recognitionIcon,
+    title: "Recognition of Small Stone Obstacles for Autonomous Driving",
+    details: "Classify the stone obstacles using machine learning models and calulate the height of stones using Frequency spectrum and analysing the frequency changes when approaching towards the stone objects",
+    link: "https://github.com/KamalByanjankar/RecognitionOfStoneObstacles",
+  },
+  {
+    id: 203,
     icon: classificationIcon,
     title: "Classification Using Machine Learning Algorithms",
     details:
@@ -53,7 +61,7 @@ const pythonProjects = [
       "https://github.com/KamalByanjankar/ClassificationUsingMachineLearningAlgorithms",
   },
   {
-    id: 4,
+    id: 202,
     icon: machineLearningIcon,
     title: "Minimizing Feature Vector using PCA",
     details:
@@ -62,7 +70,7 @@ const pythonProjects = [
       "https://github.com/KamalByanjankar/MinimizeFeatureVectorUsingPCA",
   },
   {
-    id: 5,
+    id: 201,
     icon: estimationIcon,
     title: "Parameter Estimation: Slope",
     details:
@@ -73,22 +81,22 @@ const pythonProjects = [
 
 const javascriptProjects = [
   {
-    id: 11,
+    id: 306,
     icon: netflixIcon,
-    title: "Netflix clone",
+    title: "Netflix React Application",
     details: "An online movie streaming app uisng Reactjs to fetch movies from the TMDb movie database, firebase authentication to login and create an account as well as play trailer using youtube",
     link: "https://github.com/KamalByanjankar/netflix-clone",
   },
   {
-    id: 10,
+    id: 305,
     icon: chatIcon,
-    title: "Chat clone",
+    title: "Real-time Chat Application",
     details:
       "A messenger chat clone used to send and receive message in real time using Reactjs as frontend, firebase as a backend and firestore to save the messages",
     link: "https://github.com/KamalByanjankar/chat-clone",
   },
   {
-    id: 6,
+    id: 304,
     icon: weatherIcon,
     title: "Weather App",
     details:
@@ -96,7 +104,7 @@ const javascriptProjects = [
     link: "https://github.com/KamalByanjankar/weather-app",
   },
   {
-    id: 7,
+    id: 303,
     icon: calculatorIcon,
     title: "Simple Calculator",
     details:
@@ -104,7 +112,7 @@ const javascriptProjects = [
     link: "https://github.com/KamalByanjankar/calculator",
   },
   {
-    id: 8,
+    id: 302,
     icon: websiteIcon,
     title: "Personal Website using ReactJs",
     details:
@@ -112,7 +120,7 @@ const javascriptProjects = [
     link: "https://github.com/KamalByanjankar/Portfolio",
   },
   {
-    id: 9,
+    id: 301,
     icon: websiteIcon,
     title: "Personal Website using HTML, CSS and Javascript",
     details:
