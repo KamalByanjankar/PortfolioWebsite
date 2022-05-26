@@ -1,0 +1,33 @@
+#home{
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/profile/kamal.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center top; 
+  background-repeat: no-repeat;
+}
+
+.home__container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home__container > h1 {
+  position: relative;
+  margin: 0 0 10px 0;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 56px;
+  color: #fff;
+}
+
+.home__container > p {
+  position: relative;
+  margin-bottom: 50px;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 600;
+}

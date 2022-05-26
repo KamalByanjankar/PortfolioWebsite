@@ -1,0 +1,126 @@
+.projects h1{
+  margin: 20px 0;
+}
+
+.projects__button {
+  display: flex;
+  justify-content: center;
+}
+
+.projects__button > ul {
+  margin: 0 auto 20px auto;
+  list-style: none;
+  background: #fff;
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+
+.projects__button > ul > li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 5px;
+  padding: 12px 15px 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.projects__button > ul > li:hover {
+  color: #149ddd;
+  transition: all 0.3s ease-in-out;
+}
+
+.projects__select {
+  color: #149ddd;
+}
+
+.projects__container {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: flex-start;
+}
+
+.projects__container > li {
+  flex: 0 1 31%;
+  margin: 12px 10px;
+  padding: 30px;
+  position: relative;
+  top: 0;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  border-radius: 10px;
+  background: #cad2d9;
+}
+
+.projects__container > li:hover {
+  top: -5px;
+  transition: 0.5s ease-out;
+}
+
+.projects__show {
+  display: block;
+}
+
+.projects__none {
+  display: none;
+}
+
+.projects__logo {
+  width: 7rem;
+  height: 7rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+}
+
+.projects__title,
+.projects__overview {
+  padding: 0 0 10px 0;
+  margin: 0;
+}
+
+.projects__overview {
+  font-size: 14px;
+  line-height: 1.6;
+  color: gray;
+}
+
+.projects__link {
+  font-size: 12px;
+  position: absolute;
+  left: 65%;
+  top: 90%;
+  text-decoration: none;
+  color: #149ddd;
+}
+
+.projects__link:hover {
+  text-decoration: underline;
+  color: #149ddd;
+}
+
+@media (max-width: 1178px){
+  .projects__container > li {
+    flex: 0 1 30%;
+  }
+}
+
+@media (max-width: 991px){
+  .projects__container > li{
+    flex: 0 1 46%;
+  }
+}
+
+@media (max-width: 660px){
+  .projects__container > li{
+    flex: 0 1 auto;
+    width: 100%;
+  }
+
+  .projects__link {
+    left: 80%;
+    top: 90%;
+  }
+}

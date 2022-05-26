@@ -1,0 +1,139 @@
+/* .education{
+  background-color: white;
+} */
+
+.education__button__wrapper{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* .slider__parent {
+  width: 910px;
+  position: relative;
+  overflow: hidden;
+} */
+
+/* .slider__child {
+  width: 3640px;
+  position: relative;
+  overflow: hidden;
+} */
+
+.education__wrapper {
+  width: 560px;
+  text-align: center;
+  background: white;
+  /* background-color: lightblue; */
+  border-radius: 20px;
+  display: block;
+  font-size: 15px;
+  position: relative;
+}
+
+.education__hide {
+  display: none;
+}
+
+.education__details {
+  color: #738198;
+  padding-bottom: 20px;
+  line-height: 1.2;
+  margin-top: 5px;
+}
+
+.buttons__wrapper {
+  width: 540px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 180px;
+  cursor: pointer;
+  font-size: 25px;
+  color: #404040;
+  opacity: 1;
+  margin: 0 10px;
+}
+
+.next__button:hover,
+.prev__button:hover {
+  opacity: 0.7;
+}
+
+.education__indicator {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.education__indicator > li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #bbb;
+  text-indent: -9999px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  list-style: none;
+  line-height: 20px;
+  position: relative;
+  margin: 10px 5px 0 0;
+}
+
+.education__activeIndicator {
+  background-color: #404040 !important;
+  color: #bbb !important;
+
+}
+
+.education__indicator > li:hover {
+  background: #717171;
+}
+
+.education__logo {
+  width: 200px;
+  height: 180px;
+  padding: 20px;
+}
+
+@media (max-width: 1024px){
+  .education__button__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .education__wrapper{
+    width: 460px;
+  }
+
+  .buttons__wrapper{
+    width: 440px;
+  }
+}
+
+@media (max-width: 480px){
+  .education__wrapper{
+    width: 340px;
+    font-size: 14px;
+  }
+
+  .buttons__wrapper{
+    width: 320px;
+    top: 120px;
+  }
+
+  .education__details{
+    font-size: 14px;
+  }
+
+  .education__logo {
+    width: 160px;
+    height: 140px;
+  }
+}

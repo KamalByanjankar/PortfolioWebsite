@@ -1,0 +1,23 @@
+.social {
+  position: relative;
+  margin: 20px 0 0px 20px;
+  bottom: -50px;
+  z-index: 999;
+  width: 60%;
+  margin: 0 auto;
+  bottom: -40px;
+}
+.social a {
+  padding-right: 10px;
+  font-size: 25px;
+  color: rgb(163, 163, 163);
+  position: relative;
+  top: 0;
+}
+
+.social a:hover {
+  cursor: pointer;
+  top: -5px;
+  transition: 0.5s ease-out;
+  color: rgb(235, 235, 235);
+}
