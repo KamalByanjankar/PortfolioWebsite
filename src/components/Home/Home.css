@@ -32,8 +32,15 @@
   font-weight: 600;
 }
 
-/* @media(max-width: 720px){
-  .header__image{
+@media only screen and (max-width: 780px) {
+  header__image:before {
+    content: "";
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/profile/kamal.jpg);
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
-} */
+}
