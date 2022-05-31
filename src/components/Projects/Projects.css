@@ -124,3 +124,9 @@
     top: 90%;
   }
 }
+
+@media (max-width: 390px){
+  .projects__link {
+    left: 70%;
+  }
+}
