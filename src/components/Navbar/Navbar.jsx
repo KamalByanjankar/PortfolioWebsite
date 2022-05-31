@@ -1,12 +1,12 @@
 import React, {useState} from "react";
 import {FaBars, FaTimes} from 'react-icons/fa';
 import { Link } from "react-scroll"
-// import BackDrop from '../Backdrop/Backdrop';
+import BackDrop from '../Backdrop/Backdrop';
 import profilepic from "../../assets/profile/kamal.png";
 import Social from "../Social/Social";
 import "./Navbar.css"
 
-const Navbar = (props) => {
+const Navbar = () => {
   const [toggle, setToggle] = useState(false)
 
   const handleClick = () => {
@@ -17,22 +17,22 @@ const Navbar = (props) => {
     setToggle(false)
   }
 
-  // const backDropClickHandler = () => (
-  //   setToggle(false)
-  // );
+  const backDropClickHandler = () => (
+    setToggle(false)
+  );
 
-  // let backDrop;
-  // if(toggle){ 
-  //     backDrop = <BackDrop clickHandler={backDropClickHandler}/>
-  // }
+  let backDrop;
+  if(toggle){ 
+      backDrop = <BackDrop clickHandler={backDropClickHandler}/>
+  }
 
   return (
     <>
       <div className="hamburger__menu" onClick={handleClick}>
         {toggle ? <FaTimes size={20} style={{color: '#ffffff'}}/> : <FaBars size={20} style={{color:'#ffffff'}}/>}
       </div>
+      {backDrop}
       <div className={toggle ? "navbar active" : "navbar hide"}>
-        {/* {backDrop} */}
         <div className="navbar__header">
           <a href="/"><img 
             src={profilepic}
