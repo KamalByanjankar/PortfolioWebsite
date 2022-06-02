@@ -3,7 +3,7 @@
   width: 300px;
   height: 100%;
   position: fixed;
-  z-index: 100;
+  z-index: 2;
 }
 
 .navbar__header{
@@ -55,7 +55,7 @@
   .hamburger__menu{
     position: fixed;
     left: 8px;
-    top: 15px;
+    top: 8px;
     background-color: #404040;
     color: #fff;
     width: 40px;
@@ -65,7 +65,7 @@
     justify-content: center;
     border-radius: 50px;
     cursor: pointer;
-    z-index: 999;
+    z-index: 3;
   }
 
   .navbar__navigation ul li{

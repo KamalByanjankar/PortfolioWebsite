@@ -1,21 +1,9 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome, faEnvelope, faMobile } from "@fortawesome/free-solid-svg-icons";
+
 import "./Contact.css"
 
-// const contact = [
-//   {
-//     title: "Vilbeler Landstraße 236",
-//     subtitle: "60388 Frankfurt am Main",
-//     country: "Germany",
-//     link:
-//       "https://www.google.com/maps/place/Vilbeler+Landstra%C3%9Fe+236,+60388+Frankfurt+am+Main/@50.1559662,8.7453167,517m/data=!3m1!1e3!4m5!3m4!1s0x47bd0fa4dbe6528b:0x30e4504747adcc45!8m2!3d50.1560943!4d8.746844",
-//   },
-//   {
-//     title: "Gmail",
-//     subtitle: "",
-//     country: "",
-//     link: "mailto:kamalbyanjankar@gmail.com",
-//   },
-// ]
 
 const contactEmail = "kamalbyanjankar@gmail.com"
 
@@ -47,16 +35,27 @@ const Contact = () => {
       <div className="contact__wrapper">
         <div className="contact__details">
           <div className="contact__details__address">
-            <h4>Location:</h4>
-            <p>Vilbeler Landstraße 236, 60388 Frankfurt am Main, Germany</p>
+            <i className="contact__details__address__icon">
+              <FontAwesomeIcon icon={faHome} />
+            </i>
+            <div className="test">
+              <h4>Location:</h4>
+              <p>Vilbeler Landstraße 236, 60388 Frankfurt am Main, Germany</p>
+            </div>
           </div>
 
           <div className="contact__details__email"> 
+          <i className="contact__details__email__icon">
+          <FontAwesomeIcon icon={faEnvelope} />
+          </i>
             <h4>Email:</h4>
             <p>kamalbyanjankar@gmail.com</p>
           </div>
 
           <div className="contact__details__phone">
+            <i className="contact__details__phone__icon">
+            <FontAwesomeIcon icon={faMobile} />
+            </i>
             <h4>Phone:</h4>
             <p>+49 17675893645</p>
           </div>
