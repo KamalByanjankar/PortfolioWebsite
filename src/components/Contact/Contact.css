@@ -50,30 +50,6 @@
   border-radius: 50px;
 }
 
-.contact__details__address:hover .contact__details__address__icon{
-  color: #fff;
-  background-color: #149ddd;
-  transition: all 0.5s ease-in-out;
-}
-
-.contact__details__email:hover .contact__details__email__icon{
-  color: #fff;
-  background-color: #149ddd;
-  transition: all 0.5s ease-in-out;
-}
-
-.contact__details__address:hover .contact__details__address__icon{
-  color: #fff;
-  background-color: #149ddd;
-  transition: all 0.5s ease-in-out;
-}
-
-.contact__details__phone:hover .contact__details__phone__icon{
-  color: #fff;
-  background-color: #149ddd;
-  transition: all 0.3s ease-in-out;
-}
-
 .contact__form {
   padding: 40px;
   box-sizing: border-box;
@@ -116,12 +92,6 @@
   border: none;
 }
 
-.contact__button:hover {
-  cursor: pointer;
-  background-color: #5f5f5f;
-  transition: all 0.3s ease-in;
-}
-
 @media (max-width: 860px){
   .contact__wrapper{
     flex-direction: column;
@@ -134,5 +104,31 @@
 
   .contact__form{
     width: 100%;
+  }
+}
+
+@media (hover: hover){
+  .contact__details__address:hover .contact__details__address__icon{
+    color: #fff;
+    background-color: #149ddd;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .contact__details__email:hover .contact__details__email__icon{
+    color: #fff;
+    background-color: #149ddd;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .contact__details__phone:hover .contact__details__phone__icon{
+    color: #fff;
+    background-color: #149ddd;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .contact__button:hover {
+    cursor: pointer;
+    background-color: #5f5f5f;
+    transition: all 0.3s ease-in;
   }
 }
