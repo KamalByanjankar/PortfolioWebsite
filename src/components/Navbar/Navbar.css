@@ -39,16 +39,29 @@
 
 .navbar__navigation ul li{
   list-style-type: none;
-  margin: 30px 0 40px 0;
+  margin: 35px 0;
   padding: 0;
   font-size: 16px;
   color: rgb(163, 163, 163);
 }
 
-.navbar__navigation ul li a:hover{
+.navbar__navigation ul li a{
+  display: flex;
+  align-items: center;
+}
+
+.navbar__navigation__icons{
+ margin: 0 10px; 
+ font-size: 20px;
+}
+
+.test:hover .navbar__navigation__icons{
   cursor: pointer;
   color: rgb(235, 235, 235);
-  /* color: #fad6b8; */
+}
+
+.navbar__navigation__icons .active{
+  color: rgb(235, 235, 235);
 }
 
 @media (max-width: 1024px){ 
@@ -88,5 +101,12 @@
 @media screen and (max-height: 700px){
   .navbar{
     overflow: scroll;
+  }
+}
+
+@media (hover:hover){
+  .navbar__navigation ul li a:hover{
+    cursor: pointer;
+    color: rgb(235, 235, 235);
   }
 }

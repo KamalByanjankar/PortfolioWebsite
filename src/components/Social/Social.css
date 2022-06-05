@@ -1,9 +1,9 @@
 .social {
   position: relative;
-  bottom: -30px;
+  margin: 0 auto;
+  bottom: -40px;
   z-index: 999;
   width: 60%;
-  margin: 0 auto;
 }
 .social a {
   padding-right: 10px;

@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {FaBars, FaTimes} from 'react-icons/fa';
+import {FaBars, FaTimes, FaHome, FaUser, FaUserGraduate, FaFile, FaAddressCard} from 'react-icons/fa';
 import { Link } from "react-scroll"
 import BackDrop from '../Backdrop/Backdrop';
 import profilepic from "../../assets/profile/kamal.png";
@@ -44,6 +44,9 @@ const Navbar = () => {
         <nav className="navbar__navigation">
           <ul>
             <li>
+              {/* <i className="navbar__navigation__icons">
+                <FaHome />
+              </i>      */}
               <Link activeClass="active"
                 to="home"
                 spy={true}
@@ -51,7 +54,8 @@ const Navbar = () => {
                 offset={-100}
                 duration={500}
                 onClick={closeSidebar}>
-                Home
+                  <FaHome className="navbar__navigation__icons" />
+                  Home 
               </Link>
             </li>
 
@@ -63,9 +67,11 @@ const Navbar = () => {
                 offset={-100}
                 duration={500}
                 onClick={closeSidebar}>
-                About
+                  <FaUser className="navbar__navigation__icons" />
+                  About
               </Link>
             </li>
+
             <li>
               <Link activeClass="active"
                 to="education"
@@ -74,9 +80,11 @@ const Navbar = () => {
                 offset={-100}
                 duration={500}
                 onClick={closeSidebar}>
-                Education
+                  <FaUserGraduate className="navbar__navigation__icons" />
+                  Education
               </Link>
             </li>
+
             <li>
               <Link activeClass="active"
                 to="skills"
@@ -85,9 +93,11 @@ const Navbar = () => {
                 offset={-100}
                 duration={500}
                 onClick={closeSidebar}>
-                Skills
+                  <FaBars className="navbar__navigation__icons" />
+                  Skills
               </Link>
             </li>
+
             <li>
               <Link activeClass="active"
                 to="projects"
@@ -96,9 +106,11 @@ const Navbar = () => {
                 offset={-100}
                 duration={500}
                 onClick={closeSidebar}>
-                Projects
+                  <FaFile className="navbar__navigation__icons" />
+                  Projects
               </Link>
             </li>
+
             <li>
               <Link activeClass="active"
                 to="contact"
@@ -107,7 +119,8 @@ const Navbar = () => {
                 offset={-100}
                 duration={500}
                 onClick={closeSidebar}>
-                Contact
+                  <FaAddressCard className="navbar__navigation__icons" />
+                  Contact
               </Link>
             </li>
           </ul>
