@@ -38,10 +38,8 @@ const Contact = () => {
             <i className="contact__details__address__icon">
               <FontAwesomeIcon icon={faHome} />
             </i>
-            <div className="test">
-              <h4>Location:</h4>
-              <p>Vilbeler Landstraße 236, 60388 Frankfurt am Main, Germany</p>
-            </div>
+            <h4>Location:</h4>
+            <p>Vilbeler Landstraße 236, 60388 Frankfurt am Main, Germany</p>
           </div>
 
           <div className="contact__details__email"> 
