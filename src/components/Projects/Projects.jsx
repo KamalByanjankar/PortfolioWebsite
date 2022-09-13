@@ -194,7 +194,7 @@ const Projects = () => {
                 alt="Project logo"
                 className="projects__logo"
               />
-              <h4>{item.title}</h4>
+              <h4 className="projects__title">{item.title}</h4>
               <p className="projects__overview">{item.details}</p>
               <a
                 className="projects__link"
@@ -223,7 +223,7 @@ const Projects = () => {
                 alt="Project logo"
                 className="projects__logo"
               />
-              <h4>{item.title}</h4>
+              <h4 className="projects__title">{item.title}</h4>
               <p className="projects__overview">{item.details}</p>
               <a
                 className="projects__link"
