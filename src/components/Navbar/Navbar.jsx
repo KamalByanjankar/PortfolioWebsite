@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {FaBars, FaTimes, FaHome, FaUser, FaUserGraduate, FaFile, FaAddressCard} from 'react-icons/fa';
 import { Link } from "react-scroll"
 import BackDrop from '../Backdrop/Backdrop';
@@ -25,6 +25,16 @@ const Navbar = () => {
   if(toggle){ 
       backDrop = <BackDrop clickHandler={backDropClickHandler}/>
   }
+
+  useEffect(() => {
+    if (toggle){
+      document.body.style.overflow = 'hidden';
+    }
+    else{
+      document.body.style.overflow = 'visible';
+    } 
+  }, [toggle]);
+
 
   return (
     <>
