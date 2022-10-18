@@ -26,3 +26,5 @@ yarn-error.log*
 
 #api_keys
 .env
+.env.staging
+.env.production
