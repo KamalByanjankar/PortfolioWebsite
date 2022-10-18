@@ -23,8 +23,3 @@ yarn-debug.log*
 yarn-error.log*
 
 .eslintcache
-
-#api_keys
-.env
-.env.staging
-.env.production
