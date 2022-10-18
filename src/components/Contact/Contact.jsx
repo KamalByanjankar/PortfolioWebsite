@@ -1,17 +1,11 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faEnvelope, faMobile } from "@fortawesome/free-solid-svg-icons";
 import emailjs from "emailjs-com"
 
 import "./Contact.css"
 
-// const contactEmail = "kamalbyanjankar@gmail.com"
-
 const Contact = () => {
-  const [name, setName] = useState("")
-  const [email, setEmail] = useState("")
-  const [subject, setSubject] = useState("")
-  const [message, setMessage] = useState("")
 
   const form = useRef();
 
@@ -19,11 +13,11 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, form.current, process.env.REACT_APP_YOUR_PUBLIC_KEY)
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+      // .then((result) => {
+      //     console.log(result.text);
+      // }, (error) => {
+      //     console.log(error.text);
+      // });
 
     e.target.reset();
   };
@@ -66,11 +60,9 @@ const Contact = () => {
               </label>
               <input 
                 type="text"
-                value={name}
                 id="name"
                 name="name"
                 placeholder="Your Full Name"
-                onChange={(e) => setName(e.target.value)}
                 className="contact__input"
                 required
               />
@@ -81,11 +73,9 @@ const Contact = () => {
               </label>
               <input 
                 type="email"
-                value={email}
                 id="email"
                 name="email"
                 placeholder="Your Email"
-                onChange={(e) => setEmail(e.target.value)}
                 className="contact__input"
               />
             </div>
@@ -95,11 +85,9 @@ const Contact = () => {
               </label>
               <input 
                 type="text"
-                value={subject}
                 id="subject"
                 name="subject"
                 placeholder="Your Message"
-                onChange={(e) => setSubject(e.target.value)}
                 className="contact__input"
               />
             </div>
@@ -109,18 +97,15 @@ const Contact = () => {
               </label>
               <textarea 
                 type="text"
-                value={message}
                 id="message"
                 name="message"
                 cols = "46"
                 rows = "8"
-                onChange={(e) => setMessage(e.target.value)}
                 className="contact__input contact__textarea"
               />
             </div>
             <button 
-              type="submit" 
-              onClick={sendEmail}
+              type="submit"
               className="contact__button"
             >
               Send Message
