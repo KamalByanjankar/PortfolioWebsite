@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faEnvelope, faMobile } from "@fortawesome/free-solid-svg-icons";
+import emailjs from "emailjs-com"
 
 import "./Contact.css"
 
-
-const contactEmail = "kamalbyanjankar@gmail.com"
+// const contactEmail = "kamalbyanjankar@gmail.com"
 
 const Contact = () => {
   const [name, setName] = useState("")
@@ -13,20 +13,19 @@ const Contact = () => {
   const [subject, setSubject] = useState("")
   const [message, setMessage] = useState("")
 
-  const submitForm = (e) => {
-    e.preventDefault()
-    window.open(
-      `mailto:${contactEmail}?subject=${encodeURIComponent(
-        subject
-      )}&body=${encodeURIComponent(name)} (${encodeURIComponent(
-        email
-      )}): ${encodeURIComponent(message)}`
-    );
+  const form = useRef();
 
-    setName("")
-    setEmail("")
-    setSubject("")
-    setMessage("")
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, form.current, process.env.REACT_APP_YOUR_PUBLIC_KEY)
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+    e.target.reset();
   };
 
   return (
@@ -60,7 +59,7 @@ const Contact = () => {
         </div>
 
         <div className="contact__form">
-          <form onSubmit={submitForm}>
+          <form ref={form} onSubmit={sendEmail}>
             <div>
               <label htmlFor="name" className="contact__label">
                 Name <span className="required">*</span>
@@ -70,7 +69,7 @@ const Contact = () => {
                 value={name}
                 id="name"
                 name="name"
-                // autoFocus
+                placeholder="Your Full Name"
                 onChange={(e) => setName(e.target.value)}
                 className="contact__input"
                 required
@@ -85,6 +84,7 @@ const Contact = () => {
                 value={email}
                 id="email"
                 name="email"
+                placeholder="Your Email"
                 onChange={(e) => setEmail(e.target.value)}
                 className="contact__input"
               />
@@ -98,6 +98,7 @@ const Contact = () => {
                 value={subject}
                 id="subject"
                 name="subject"
+                placeholder="Your Message"
                 onChange={(e) => setSubject(e.target.value)}
                 className="contact__input"
               />
@@ -119,7 +120,7 @@ const Contact = () => {
             </div>
             <button 
               type="submit" 
-              onClick={submitForm}
+              onClick={sendEmail}
               className="contact__button"
             >
               Send Message
