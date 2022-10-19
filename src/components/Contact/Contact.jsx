@@ -7,7 +7,6 @@ import "./Contact.css"
 
 
 const Contact = () => {
-
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -22,6 +21,34 @@ const Contact = () => {
 
     e.target.reset();
   };
+
+  const displayMessage = () => {
+    console.log("Button has been clicked")
+    const name = document.getElementById('name');
+    const email = document.getElementById('email');
+    const subject = document.getElementById('subject');
+    const message = document.getElementById('message');
+    const success = document.getElementById('success');
+    const danger = document.getElementById('danger');
+
+    if(name.value === '' || email.value === '' || subject.value === '' || message.value === ''){
+      danger.style.display = "block";
+    }
+    else{
+      setTimeout(() => {
+        name.value = '';
+        email.value = '';
+        subject.value = '';
+        message.value = '';
+      }, 2000);
+      success.style.display = "block";
+    }
+
+    setTimeout (() => {
+      danger.style.display = 'none';
+      success.style.display = 'none';
+    }, 4000);
+  }
 
   return (
     <div className="header contact">
@@ -78,6 +105,7 @@ const Contact = () => {
                 name="email"
                 placeholder="Your Email"
                 className="contact__input"
+                required
               />
             </div>
             <div>
@@ -90,6 +118,7 @@ const Contact = () => {
                 name="subject"
                 placeholder="Your Message"
                 className="contact__input"
+                required
               />
             </div>
             <div>
@@ -103,20 +132,22 @@ const Contact = () => {
                 cols = "46"
                 rows = "8"
                 className="contact__input contact__textarea"
+                required
               />
             </div>
             <button 
               type="submit"
               className="contact__button"
+              onClick={displayMessage}
             >
               Send Message
             </button>
             <div className="message">
-              <div className="form__success">
+              <div className="form__success" id="success">
                 <p>Message has been sent.</p>
               </div>
-              <div className="form__danger">
-                <p>Fields can't be empty!</p>
+              <div className="form__danger" id="danger">
+                Fields can't be empty!
               </div>
             </div>
           </form>
