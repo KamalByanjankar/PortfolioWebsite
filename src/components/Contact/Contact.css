@@ -92,6 +92,28 @@
   border: none;
 }
 
+.message{
+  margin: 20px 0 20px 0;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.message .form__success{
+  font-size: 20px;
+  color: green;
+  position: absolute;
+  display: none;
+}
+
+.message .form__danger{
+  font-size: 20px;
+  color: red;
+  position: absolute;
+  display: none;
+}
+
 @media (max-width: 860px){
   .contact__wrapper{
     flex-direction: column;

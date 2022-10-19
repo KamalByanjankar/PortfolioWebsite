@@ -111,6 +111,14 @@ const Contact = () => {
             >
               Send Message
             </button>
+            <div className="message">
+              <div className="form__success">
+                <p>Message has been sent.</p>
+              </div>
+              <div className="form__danger">
+                <p>Fields can't be empty!</p>
+              </div>
+            </div>
           </form>
         </div>
       </div>
