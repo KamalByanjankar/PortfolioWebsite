@@ -7,12 +7,19 @@ import "./Contact.css"
 
 
 const Contact = () => {
+  // const {form, name, email, subject, message, success, danger }= useRef();
   const form = useRef();
+  const name = useRef();
+  const email = useRef();
+  const subject = useRef();
+  const message = useRef();
+  const success = useRef();
+  const danger = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, form.current, process.env.REACT_APP_YOUR_PUBLIC_KEY)
+    // emailjs.sendForm(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, form.current, process.env.REACT_APP_YOUR_PUBLIC_KEY)
       // .then((result) => {
       //     console.log(result.text);
       // }, (error) => {
@@ -23,30 +30,30 @@ const Contact = () => {
   };
 
   const displayMessage = () => {
-    console.log("Button has been clicked")
-    const name = document.getElementById('name');
-    const email = document.getElementById('email');
-    const subject = document.getElementById('subject');
-    const message = document.getElementById('message');
-    const success = document.getElementById('success');
-    const danger = document.getElementById('danger');
+    // console.log("Button has been clicked")
+    // var name = document.getElementById('name');
+    // var email = document.getElementById('email');
+    // var subject = document.getElementById('subject');
+    // var message = document.getElementById('message');
+    // const success = document.getElementById('success');
+    // const danger = document.getElementById('danger');
 
-    if(name.value === '' || email.value === '' || subject.value === '' || message.value === ''){
-      danger.style.display = "block";
+    if(name.current.value === '' || email.current.value === '' || subject.current.value === '' || message.current.value === ''){
+      danger.current.style.display = "block";
     }
     else{
-      setTimeout(() => {
-        name.value = '';
-        email.value = '';
-        subject.value = '';
-        message.value = '';
-      }, 2000);
-      success.style.display = "block";
+      // setTimeout(() => {
+      //   name.current.value = '';
+      //   email.current.value = '';
+      //   subject.current.value = '';
+      //   message.current.value = '';
+      // }, 2000);
+      success.current.style.display = "block";
     }
 
     setTimeout (() => {
-      danger.style.display = 'none';
-      success.style.display = 'none';
+      danger.current.style.display = 'none';
+      success.current.style.display = 'none';
     }, 4000);
   }
 
@@ -93,6 +100,7 @@ const Contact = () => {
                 placeholder="Your Full Name"
                 className="contact__input"
                 required
+                ref={name}
               />
             </div>
             <div>
@@ -106,6 +114,7 @@ const Contact = () => {
                 placeholder="Your Email"
                 className="contact__input"
                 required
+                ref={email}
               />
             </div>
             <div>
@@ -119,6 +128,7 @@ const Contact = () => {
                 placeholder="Your Message"
                 className="contact__input"
                 required
+                ref={subject}
               />
             </div>
             <div>
@@ -133,6 +143,7 @@ const Contact = () => {
                 rows = "8"
                 className="contact__input contact__textarea"
                 required
+                ref={message}
               />
             </div>
             <button 
@@ -143,10 +154,10 @@ const Contact = () => {
               Send Message
             </button>
             <div className="message">
-              <div className="form__success" id="success">
+              <div className="form__success" id="success" ref={success}>
                 <p>Message has been sent.</p>
               </div>
-              <div className="form__danger" id="danger">
+              <div className="form__danger" id="danger" ref={danger}>
                 Fields can't be empty!
               </div>
             </div>
