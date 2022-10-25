@@ -11,6 +11,8 @@
   box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
   margin-right: 25px;
   padding: 52px 30px;
+  border-radius: 10px;
+  margin-bottom: 40px;
 }
 
 .contact__details h4{
@@ -43,12 +45,14 @@
 }
 
 .contact__form {
-  padding: 40px;
+  padding: 40px 40px 0 40px;
   box-sizing: border-box;
   background-color: #fff;
   box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
   width: 90%;
   text-align: center;
+  border-radius: 10px;
+  margin-bottom: 40px;
 }
 
 .contact__label {
@@ -82,6 +86,7 @@
   color: #fff;
   font-size: 1rem;
   border: none;
+  margin-bottom: 0;
 }
 
 .message{
