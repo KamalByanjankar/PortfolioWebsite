@@ -14,23 +14,25 @@ function App() {
   return (
     <div className="app">
       <Navbar />
-      <div id="home">
-        <Home />
-      </div>
-      <div id="about">
-        <About />
-      </div>
-      <div id="education">
-        <Education />
-      </div>
-      <div id="skills">
-        <Skills />
-      </div>
-      <div id="projects">
-        <Projects />
-      </div>
-      <div id="contact">
-        <Contact />
+      <div className="contents">
+        <div id="home">
+          <Home />
+        </div>
+        <div id="about">
+          <About />
+        </div>
+        <div id="education">
+          <Education />
+        </div>
+        <div id="skills">
+          <Skills />
+        </div>
+        <div id="projects">
+          <Projects />
+        </div>
+        <div id="contact">
+          <Contact />
+        </div>
       </div>
     </div>
   );
