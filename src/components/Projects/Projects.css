@@ -10,7 +10,8 @@
 .projects__button > ul {
   margin: 0 auto 20px auto;
   list-style: none;
-  background: #fff;
+  /* background: #fff; */
+  background-color: #cad2d9;
   border-radius: 50px;
   padding: 2px 15px;
 }

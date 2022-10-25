@@ -5,6 +5,12 @@ body {
 
 .app {
   height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+div.app > div:nth-of-type(odd) {
+  background: #fff;
 }
 
 @media (max-screen: 1024px){
