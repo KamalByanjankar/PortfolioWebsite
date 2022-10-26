@@ -22,8 +22,24 @@
   left: 0;
 }
 
+.about__image > img{
+  max-width: 300px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 40px;
+}
+
+.about__content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .about__lineSpace {
   line-height: 1.5;
+  width: 70%;
+  margin-right: 30px;
 }
 
 .about__resume__download{
@@ -49,6 +65,22 @@
 @media (max-width:1024px){
   .header{
     margin: 0 90px; 
+  }
+
+  .about__content{
+    flex-direction: column;
+  }
+
+  .about__image > img{
+    margin-bottom: 20px;
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+    margin-right: 0;
+  }
+
+  .about__lineSpace{
+    margin-right: 0;
   }
 }
 
