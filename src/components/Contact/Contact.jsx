@@ -7,7 +7,6 @@ import "./Contact.css"
 
 
 const Contact = () => {
-  // const {form, name, email, subject, message, success, danger }= useRef();
   const form = useRef();
   const name = useRef();
   const email = useRef();
@@ -20,35 +19,17 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, form.current, process.env.REACT_APP_YOUR_PUBLIC_KEY)
-      // .then((result) => {
-      //     console.log(result.text);
-      // }, (error) => {
-      //     console.log(error.text);
-      // });
 
     // clears the input fields
     e.target.reset();
   };
 
   const displayMessage = () => {
-    // console.log("Button has been clicked")
-    // var name = document.getElementById('name');
-    // var email = document.getElementById('email');
-    // var subject = document.getElementById('subject');
-    // var message = document.getElementById('message');
-    // const success = document.getElementById('success');
-    // const danger = document.getElementById('danger');
 
     if(name.current.value === '' || email.current.value === '' || subject.current.value === '' || message.current.value === ''){
       danger.current.style.display = "block";
     }
     else{
-      // setTimeout(() => {
-      //   name.current.value = '';
-      //   email.current.value = '';
-      //   subject.current.value = '';
-      //   message.current.value = '';
-      // }, 2000);
       success.current.style.display = "block";
     }
 
