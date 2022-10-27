@@ -11,18 +11,26 @@ const About = () => {
         <div className="about__image">
           <img src={image} alt="self"/>
         </div>
-        <div className="about__lineSpace">
-          I'm Kamal Byanjankar and I am from Nepal. I completed my
-          Master in Engineering in Information Technology from Frankfurt University of
-          Applied Sciences. I did my Bachelor in Electronics and Communication Engineering 
-          from Kantipur Engineering College in Nepal. While doing my Master's, I gradually improved my knowledge and skills in programming 
-          and did my curriculum projects, as well as, completed my academic projects.
-          Besides my curriculum projects, I have done some projects on Java, Python and ReactJs to increase my skills and knowledge.
-          All the projects that I have done are available in Github.
+        <div className="about__linespace">
+          Hi! My name is Kamal Byanjankar and I am from Nepal. I did my Master in Engineering in Information Technology from 
+          Frankfurt University of Applied Scienes. I completed my Master study with a final thesis on  
+          <b> Recognition of Small Stone Obstacles for Autonomous Driving</b> using Machine Learning algorithms. I did 
+          my Bachelor in Engineering in Electronics and Communication Engineering from Kantipur Engineering College in Nepal with a 
+          final year project on <b>Automatic Solar Charger with Tracking</b>.
+          <br/>
+          <br/>
+          Currently, I am doing projects on Reactjs and Java Spring boot. During my Master's, as a part of curriculum projects, I have 
+          done projects using Java, python, and C# programming languages. As learning is a never ending process, I have been doing 
+          projects to improve my knowledge and skills. All the projects are available in <a 
+            href="https://github.com/kamalByanjankar" 
+            target="_blank"
+            rel="noopener noreferrer"> 
+             Github
+          </a>.
           <br/>
           <br/>
           I am a motivated and open minded person, trying to achieve my goals. Talking about my hobbies, I like to read, 
-          listen music, and travel different places.
+          listen music, and travelling.
         </div>
       </div>
       <div className="about__resume__download">

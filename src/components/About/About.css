@@ -36,10 +36,14 @@
   align-items: center;
 }
 
-.about__lineSpace {
+.about__linespace {
   line-height: 1.5;
   width: 70%;
   margin-right: 30px;
+}
+
+.about__linespace > a{
+  text-decoration: none;
 }
 
 .about__resume__download{
@@ -79,7 +83,7 @@
     margin-right: 0;
   }
 
-  .about__lineSpace{
+  .about__linespace{
     margin-right: 0;
     width: 100%;
   }
