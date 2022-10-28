@@ -1,7 +1,7 @@
 .scrollButton__button{
     position: fixed;
     left: 92%;
-    bottom: 120px;
+    bottom: 20%;
     height: 20px;
     font-size: 3rem;
     z-index: 1;
@@ -16,3 +16,9 @@
         left: 80%;
     }
 }
+
+/* @media (max-width: 480px){
+    .scrollButton__button{
+        bottom: 40%;
+    }
+} */
