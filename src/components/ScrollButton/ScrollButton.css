@@ -14,11 +14,6 @@
 @media (max-width: 1024px){
     .scrollButton__button{
         left: 80%;
+        font-size: 2.5rem;
     }
 }
-
-/* @media (max-width: 480px){
-    .scrollButton__button{
-        bottom: 40%;
-    }
-} */
