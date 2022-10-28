@@ -1,0 +1,18 @@
+.scrollButton__button{
+    position: fixed;
+    left: 92%;
+    bottom: 80px;
+    height: 20px;
+    font-size: 3rem;
+    z-index: 1;
+    cursor: pointer;
+    color: #149ddd;
+    border: none;
+    background: transparent;
+}
+
+@media (max-width: 1024px){
+    .scrollButton__button{
+        left: 80%;
+    }
+}

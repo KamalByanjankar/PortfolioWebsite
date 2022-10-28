@@ -8,7 +8,9 @@ import Education from "../components/Education/Education";
 import Skills from "../components/Skills/Skills";
 import Projects from "../components/Projects/Projects";
 import Contact from "../components/Contact/Contact";
+import ScrollButton from "../components/ScrollButton/ScrollButton";
 // import CustomChatbot from "../components/Chatbot/CustomChatbot";
+
 
 function App() {
   return (
@@ -34,6 +36,7 @@ function App() {
           <Contact />
         </div>
       </div>
+      <ScrollButton />
     </div>
   );
 }
