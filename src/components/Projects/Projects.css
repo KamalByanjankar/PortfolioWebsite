@@ -5,6 +5,7 @@
 .projects__button {
   display: flex;
   justify-content: center;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .projects__button > ul {

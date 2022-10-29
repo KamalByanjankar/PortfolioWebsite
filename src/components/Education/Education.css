@@ -39,6 +39,7 @@
   color: #404040;
   opacity: 1;
   margin: 0 10px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .next__button:hover,
@@ -48,6 +49,7 @@
 
 .education__indicator {
   text-align: center;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .education__indicator > li {

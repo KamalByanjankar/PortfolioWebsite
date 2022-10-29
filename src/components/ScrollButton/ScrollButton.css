@@ -9,6 +9,7 @@
     color: #149ddd;
     border: none;
     background: transparent;
+    -webkit-tap-highlight-color: transparent;
 }
 
 @media (max-width: 1024px){

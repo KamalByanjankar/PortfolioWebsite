@@ -79,6 +79,8 @@
     border-radius: 50px;
     cursor: pointer;
     z-index: 3;
+    -webkit-tap-highlight-color: transparent;
+    
   }
 
   .navbar__navigation ul li{
