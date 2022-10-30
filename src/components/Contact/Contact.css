@@ -110,7 +110,7 @@
   display: none;
 }
 
-@media (max-width: 860px){
+@media screen and (max-width: 860px){
   .contact__wrapper{
     flex-direction: column;
   }
@@ -122,6 +122,10 @@
 
   .contact__form{
     width: 100%;
+  }
+
+  .contact__input{
+    font-size: 14px !important;
   }
 }
 
