@@ -25,12 +25,12 @@ const Skills = () => {
           <li className="javascript">
             Javascript<span className="skills__percent">60%</span>
           </li>
-          {/* <li className="html">
+          <li className="html">
             HTML<span className="skills__percent">70%</span>
           </li>
           <li className="css">
             CSS<span className="skills__percent">70%</span>
-          </li> */}
+          </li>
         </ul>
       </div>
     </div>

@@ -1,3 +1,7 @@
+.contact{
+  padding-bottom: 40px;
+}
+
 .contact__wrapper {
   display: flex;
   justify-content: space-between;
@@ -12,7 +16,6 @@
   margin-right: 25px;
   padding: 52px 30px;
   border-radius: 10px;
-  margin-bottom: 80px;
 }
 
 .contact__details h4{
@@ -52,7 +55,6 @@
   width: 90%;
   text-align: center;
   border-radius: 10px;
-  margin-bottom: 80px;
 }
 
 .contact__label {
