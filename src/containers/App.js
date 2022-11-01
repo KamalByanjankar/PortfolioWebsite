@@ -9,6 +9,7 @@ import Skills from "../components/Skills/Skills";
 import Projects from "../components/Projects/Projects";
 import Contact from "../components/Contact/Contact";
 import ScrollButton from "../components/ScrollButton/ScrollButton";
+import Experience from "../components/Experience/Experience";
 // import CustomChatbot from "../components/Chatbot/CustomChatbot";
 
 
@@ -28,6 +29,9 @@ function App() {
         </div>
         <div id="skills">
           <Skills />
+        </div>
+        <div id="Experience">
+          <Experience />
         </div>
         <div id="projects">
           <Projects />

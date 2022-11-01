@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import {FaBars, FaTimes, FaHome, FaUser, FaUserGraduate, FaFile, FaAddressCard} from 'react-icons/fa';
+import {FaBars, FaTimes, FaHome, FaUser, FaUserGraduate, FaFile, FaAddressCard, FaBriefcase} from 'react-icons/fa';
 import { Link } from "react-scroll"
 import BackDrop from '../Backdrop/Backdrop';
 import profilepic from "../../assets/profile/kamal.png";
@@ -105,6 +105,19 @@ const Navbar = () => {
                 onClick={closeSidebar}>
                   <FaBars className="navbar__navigation__icons" />
                   Skills
+              </Link>
+            </li>
+
+            <li>
+              <Link activeClass="active"
+                to="experience__internship"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                onClick={closeSidebar}>
+                  <FaBriefcase className="navbar__navigation__icons" />
+                  Experience
               </Link>
             </li>
 
