@@ -10,20 +10,20 @@ const Skills = () => {
           <li className="java">
             Java<span className="skills__percent">60%</span>
           </li>
-          <li className="springBoot">
-            Spring Boot<span className="skills__percent">65%</span>
+          <li className="react">
+            ReactJs<span className="skills__percent">70%</span>
           </li>
-          <li className="database">
-            Database<span className="skills__percent">60%</span>
+          <li className="springBoot">
+            Spring Boot<span className="skills__percent">60%</span>
+          </li>
+          <li className="javascript">
+            Javascript<span className="skills__percent">60%</span>
           </li>
           <li className="python">
             Python<span className="skills__percent">60%</span>
           </li>
-          <li className="react">
-            ReactJs<span className="skills__percent">70%</span>
-          </li>
-          <li className="javascript">
-            Javascript<span className="skills__percent">60%</span>
+          <li className="database">
+            SQL<span className="skills__percent">60%</span>
           </li>
           <li className="html">
             HTML<span className="skills__percent">70%</span>
