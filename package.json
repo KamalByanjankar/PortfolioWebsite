@@ -10,10 +10,17 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "cryptiles": "^4.1.2",
     "emailjs-com": "^3.2.0",
     "font-awesome": "^4.7.0",
+    "hawk": "^9.0.1",
+    "hoek": "^5.0.3",
+    "mime": "^1.4.1",
+    "minimist": "^1.2.6",
     "node-fetch": "^2.6.7",
     "node-modules": "^1.0.1",
+    "nth-check": "^2.0.1",
+    "qs": "^6.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-elastic-carousel": "^0.4.1",
@@ -24,7 +31,9 @@
     "react-scripts": "^2.1.3",
     "react-scroll": "^1.8.6",
     "react-typing-effect": "^2.0.3",
-    "serialize-javascript": "^3.1.0"
+    "request": "^2.68.0",
+    "serialize-javascript": "^3.1.0",
+    "tunnel-agent": "^0.6.0"
   },
   "scripts": {
     "start": "react-scripts start",
