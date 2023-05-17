@@ -100,8 +100,8 @@ const javascriptProjects = [
     icon: weatherIcon,
     title: "Weather App",
     details:
-      "A weather App used to get the weather information of the city using Reactjs and fetch the weather data from openweathermap api",
-    link: "https://github.com/KamalByanjankar/weather-app",
+      "A weather App used to get the weather information of the city using Reactjs and fetches the weather data from openweathermap api",
+    link: "https://github.com/KamalByanjankar/Weather-Application",
   },
   {
     id: 303,
