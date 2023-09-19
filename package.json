@@ -30,7 +30,7 @@
         "webpack-dev-middleware": "^5.3.3"
     },
     "scripts": {
-        "start": "./node_modules/.bin/netlify-lambda serve src",
+        "start": "react-scripts --openssl-legacy-provider start",
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
@@ -51,7 +51,6 @@
         ]
     },
     "devDependencies": {
-        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
         "@svgr/webpack": "^8.1.0",
         "react-error-overlay": "^6.0.9"
     },
