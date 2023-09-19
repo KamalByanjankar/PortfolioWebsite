@@ -8,7 +8,7 @@ function ScrollButton() {
   
     useEffect(() => {
         const toggleVisible = () => {
-            window.pageYOffset > 300 ? setVisible(true) : setVisible(false);
+            window.scrollY > 300 ? setVisible(true) : setVisible(false);
         }
 
         window.addEventListener('scroll', toggleVisible)
