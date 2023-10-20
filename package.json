@@ -27,7 +27,8 @@
         "serialize-javascript": "^3.1.0",
         "serve": "^14.1.2",
         "terser-webpack-plugin": "^2.3.6",
-        "webpack-dev-middleware": "^5.3.3"
+        "webpack-dev-middleware": "^5.3.3",
+        "@babel/traverse": "7.23.2"
     },
     "scripts": {
         "start": "react-scripts start",
@@ -52,9 +53,11 @@
     },
     "devDependencies": {
         "@svgr/webpack": "^8.1.0",
-        "react-error-overlay": "^6.0.9"
+        "react-error-overlay": "^6.0.9",
+        "postcss": "8.4.31"
     },
     "overrides": {
-        "@svgr/webpack": "$@svgr/webpack"
+        "@svgr/webpack": "$@svgr/webpack",
+        "postcss": "$postcss"
     }
 }
