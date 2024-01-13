@@ -33,11 +33,11 @@ const About = () => {
           listen music, and travelling.
         </div>
       </div>
-      <div className="about__resume__download">
+      {/* <div className="about__resume__download">
         <a href={file} download="Resume_Kamal_Byanjankar">
           Download Resume
         </a>
-      </div>
+      </div> */}
     </div>
   )
 }

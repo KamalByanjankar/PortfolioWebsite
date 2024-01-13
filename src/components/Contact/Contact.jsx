@@ -44,13 +44,13 @@ const Contact = () => {
       <h1>Contact</h1>
       <div className="contact__wrapper">
         <div className="contact__details">
-          <div className="contact__details__address">
+          {/* <div className="contact__details__address">
             <i className="contact__details__address__icon">
               <FontAwesomeIcon icon={faHome} />
             </i>
             <h4>Location:</h4>
             <p>Vilbeler Landstraße 236, 60388 Frankfurt am Main, Germany</p>
-          </div>
+          </div> */}
 
           <div className="contact__details__email"> 
           <i className="contact__details__email__icon">
@@ -60,13 +60,13 @@ const Contact = () => {
             <p>kamalbyanjankar@gmail.com</p>
           </div>
 
-          <div className="contact__details__phone">
+          {/* <div className="contact__details__phone">
             <i className="contact__details__phone__icon">
             <FontAwesomeIcon icon={faMobile} />
             </i>
             <h4>Phone:</h4>
             <p>+49 17675893645</p>
-          </div>
+          </div> */}
         </div>
 
         <div className="contact__form">
