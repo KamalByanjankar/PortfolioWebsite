@@ -18,7 +18,6 @@ const javaProjects = [
   {
     id: 103,
     icon: authorizationIcon,
-
     title: "jwt authorization",
     details:
       "Spring Boot authentication and authorization using JWT, Spring security and Postgresql",
@@ -27,7 +26,6 @@ const javaProjects = [
   {
     id: 102,
     icon: bankIcon,
-
     title: "Banking Application",
     details:
       "A Banking Application using Spring boot, Hibernate and Thymeleaf",
@@ -80,6 +78,13 @@ const pythonProjects = [
 ]
 
 const javascriptProjects = [
+  {
+    id: 307,
+    icon: bankIcon,
+    title: "Online Banking Application",
+    details: "An online banking application using Reactjs as a frontend and firebase to store user data. After registration, the user can transfer and view transactions as well as view details and update",
+    link: "https://github.com/KamalByanjankar/bankApp",
+  },
   {
     id: 306,
     icon: netflixIcon,
