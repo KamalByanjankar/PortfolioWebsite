@@ -28,7 +28,8 @@
         "serve": "^14.1.2",
         "terser-webpack-plugin": "^2.3.6",
         "webpack-dev-middleware": "^5.3.3",
-        "@babel/traverse": "7.23.2"
+        "@babel/traverse": "7.23.2",
+        "follow-redirects": "1.15.5"
     },
     "scripts": {
         "start": "react-scripts start",
