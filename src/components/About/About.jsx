@@ -19,7 +19,7 @@ const About = () => {
           final year project on <b>Automatic Solar Charger with Tracking</b>.
           <br />
           <br />
-          Currently, I am doing projects on Reactjs and Java Spring boot. During my Master's, as a part of curriculum projects, I have
+          As a part of my Master's curriculum projects, I have
           done projects using Java, python, and C# programming languages. As learning is a never ending process, I have been doing
           projects to improve my knowledge and skills. All the projects are available in <a
             href="https://github.com/kamalByanjankar"
